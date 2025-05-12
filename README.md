@@ -322,4 +322,151 @@
         
         <div class="certification-card black-belt">
           <div class="certification-title">Six Sigma</div>
-          <div class="belt-level">Black Belt Certified</div
+          <div class="belt-level">Black Belt Certified</div>
+          <div class="certification-body">
+            This certifies that Faisal Ahamed Bin Raj Mohamed has successfully completed the requirements 
+            for Black Belt certification by demonstrating advanced application of statistical, 
+            problem solving, and Six Sigma methodologies.
+          </div>
+          <div class="certification-date">14 December 2010</div>
+          <div class="signatures">
+            <div class="signature"><strong>Rich Beyer</strong></div>
+            <div>Chairman and CEO, Freescale Semiconductor</div>
+            <div class="signature" style="margin-top: 10px;"><strong>Jim Baillie</strong></div>
+            <div>Vice President Quality</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        
+        <!-- Current Role -->
+        <div class="experience-card">
+          <div class="company-header">
+            <div>
+              <div class="job-title">Senior Staff Test/Product Development Engineer</div>
+              <div class="company-name">Independent / Career Break</div>
+            </div>
+            <div class="job-duration">Apr 2024 - Present</div>
+          </div>
+          <div class="job-location">Kuala Lumpur, Malaysia · On-site</div>
+          <div class="job-description">
+            After completing 8+ years of service as a Senior Principal Test Development Engineer at NXP Semiconductors, 
+            I took a short career break to pursue personal goals. I am now actively seeking new opportunities in RF testing, 
+            semiconductor test/product engineering, or smart manufacturing.
+          </div>
+          <ul class="job-highlights">
+            <li>Open to full-time or contract roles where I can apply my deep industry knowledge</li>
+            <li>Seeking positions to contribute to innovation and lead test development or product engineering initiatives</li>
+          </ul>
+        </div>
+        
+        <!-- NXP Role -->
+        <div class="experience-card">
+          <div class="company-header">
+            <div>
+              <div class="job-title">Engineering Manager/Senior Principal Test Development Engineer</div>
+              <div class="company-name">NXP Semiconductors (acquired Freescale)</div>
+            </div>
+            <div class="job-duration">Mar 2016 - Mar 2024 · 8 yrs</div>
+          </div>
+          <div class="job-location">Kuala Lumpur, Malaysia · On-site</div>
+          <ul class="job-highlights">
+            <li>Led test development and introduction of 30+ new RF/mixed-signal products for automotive, industrial, and IoT applications</li>
+            <li>Directed ATE test strategy including load board/interface design for Advantest V93K and Teradyne platforms</li>
+            <li>Achieved 20-30% test cost reductions through test flow optimization and data-driven improvements</li>
+            <li>Improved yield by 5% through failure analysis and collaboration with fab/assembly teams</li>
+            <li>Managed cross-functional teams to meet NPI timelines with first-pass success</li>
+            <li>Championed Six Sigma projects (Green & Black Belt certified) for yield optimization</li>
+            <li>Supported global manufacturing transfers to OSATs in Southeast Asia and Europe</li>
+            <li>Multiple award winner for technical excellence and mentoring junior engineers</li>
+          </ul>
+          <div class="skills-tags">
+            <span class="skill-tag">ATE Test Development</span>
+            <span class="skill-tag">RF Testing</span>
+            <span class="skill-tag">Six Sigma Black Belt</span>
+            <span class="skill-tag">Yield Improvement</span>
+            <span class="skill-tag">NPI Management</span>
+          </div>
+        </div>
+        
+        <!-- Freescale Role -->
+        <div class="experience-card">
+          <div class="company-header">
+            <div>
+              <div class="job-title">Staff Product Engineer</div>
+              <div class="company-name">Freescale Semiconductor</div>
+            </div>
+            <div class="job-duration">Jun 2004 - Jun 2016 · 12 yrs</div>
+          </div>
+          <div class="job-location">Petaling Jaya, Malaysia · On-site</div>
+          <ul class="job-highlights">
+            <li>Delivered 20% test time reduction through optimized test plans and bench-to-production transfer</li>
+            <li>Supported 25+ product qualifications, reducing time-to-market by 15%</li>
+            <li>Improved yield by 18% through systematic electrical failure analysis</li>
+            <li>Spearheaded load board/socket interface design achieving 99.5% first-pass success</li>
+            <li>Reduced engineering debug cycle by 30% through global team collaboration</li>
+            <li>Trained junior engineers and created SOP documentation</li>
+          </ul>
+          <div class="skills-tags">
+            <span class="skill-tag">Product Engineering</span>
+            <span class="skill-tag">Test Optimization</span>
+            <span class="skill-tag">Failure Analysis</span>
+            <span class="skill-tag">LabVIEW Certified</span>
+          </div>
+        </div>
+        
+        <!-- Motorola Role -->
+        <div class="experience-card">
+          <div class="company-header">
+            <div>
+              <div class="job-title">Senior Test Development Engineer</div>
+              <div class="company-name">Motorola Semiconductor</div>
+            </div>
+            <div class="job-duration">Feb 2000 - Jun 2004 · 4 yrs 5 mos</div>
+          </div>
+          <div class="job-location">Petaling Jaya, Malaysia · On-site</div>
+          <ul class="job-highlights">
+            <li>Developed production test solutions for 10+ analog/RF products</li>
+            <li>Reduced ATE hardware cost by 12% through component reusability</li>
+            <li>Designed thermally stable load boards for high-power RF applications</li>
+            <li>Improved yield by 22% within 3 months through cross-functional FA</li>
+            <li>Key contributor to ISO/quality audits with documentation excellence</li>
+            <li>"Engineering Excellence" award winner for accelerating NPI schedule</li>
+          </ul>
+          <div class="skills-tags">
+            <span class="skill-tag">Analog Testing</span>
+            <span class="skill-tag">ATE Hardware</span>
+            <span class="skill-tag">ISO Compliance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>Key Projects</h2>
+      <ul>
+        <li><strong>Project Aloha</strong> - AI optimization for RF product-line using machine learning algorithms</li>
+        <li><strong>Project Data</strong> - Load board development with AI-driven impedance tuning</li>
+        <li><strong>5G Test Solution</strong> - RF load board design for millimeter-wave applications</li>
+        <li><strong>Yield Enhancement</strong> - AI-based pattern recognition for failure analysis</li>
+      </ul>
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> faisalking3rd@gmail.com / Faizal_1500@yahoo.com</p>
+      <p><strong>Phone:</strong> +6011 370 68683</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisal-ahamed-876aa417" target="_blank">linkedin.com/in/faisal-ahamed-876aa417</a></p>
+    </section>
+
+    <footer>
+      © 2024 Faisal Ahamed | Senior Principal Test Development Engineer
+    </footer>
+  </div>
+</body>
+</html>
+
