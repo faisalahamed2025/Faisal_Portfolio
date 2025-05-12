@@ -17,12 +17,11 @@
     
     body {
       font-family: 'Segoe UI', system-ui, sans-serif;
-      background: 
-        linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9)),
-        url('https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat fixed;
+      background: #f5f5f5;
       color: var(--dark);
       line-height: 1.6;
       margin: 0;
+      padding: 0;
     }
     
     .container {
@@ -32,17 +31,12 @@
     }
     
     header {
-      background: 
-        linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.9)),
-        url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background: var(--primary);
       color: white;
       padding: 2rem;
       text-align: center;
       border-radius: 8px;
       margin-bottom: 2rem;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
     .profile-pic {
@@ -51,29 +45,19 @@
       border-radius: 50%;
       border: 4px solid white;
       object-fit: cover;
-      margin: 0 auto;
+      margin: 0 auto 1rem;
       display: block;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     
     section {
-      background-color: var(--light);
+      background-color: white;
       padding: 1.5rem;
       border-radius: 8px;
       margin-bottom: 2rem;
-      backdrop-filter: blur(2px);
-      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     
-    .projects-section {
-      background:
-        linear-gradient(rgba(248, 249, 250, 0.85), rgba(248, 249, 250, 0.9)),
-        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-position: center;
-    }
-    
-    h1, h2 {
+    h1, h2, h3 {
       color: var(--primary);
     }
     
@@ -101,74 +85,26 @@
       left: 0;
     }
     
-    .contact-info {
-      background: 
-        linear-gradient(rgba(236, 240, 241, 0.9), rgba(236, 240, 241, 0.95)),
-        url('https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-position: center;
+    /* Certification Plaques */
+    .plaque-container {
+      text-align: center;
+      margin: 25px 0;
     }
     
-    /* Certifications Section */
-    .certifications {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+    .certification-plaque {
+      width: 100%;
+      max-width: 400px;
+      border: 10px solid #d4af37;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin: 15px auto;
     }
     
-    .certification-card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-top: 4px solid var(--primary);
-    }
-    
-    .green-belt {
-      border-top-color: var(--sixsigma-green);
-    }
-    
-    .black-belt {
-      border-top-color: var(--sixsigma-black);
-    }
-    
-    .certification-title {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    
-    .belt-level {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 15px;
-    }
-    
-    .certification-body {
-      margin-bottom: 15px;
-      line-height: 1.5;
-    }
-    
-    .certification-date {
-      font-style: italic;
-      color: #666;
-    }
-    
-    .signatures {
-      margin-top: 20px;
-      font-size: 0.9rem;
-    }
-    
-    .signature {
-      margin-bottom: 5px;
-    }
-    
-    /* Experience Section */
+    /* Timeline Experience */
     .timeline {
       position: relative;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 30px auto;
     }
     
     .timeline::after {
@@ -179,7 +115,6 @@
       top: 0;
       bottom: 0;
       left: 50px;
-      margin-left: -1px;
     }
     
     .experience-card {
@@ -188,7 +123,6 @@
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       margin-left: 80px;
     }
     
@@ -208,6 +142,7 @@
     .company-header {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       margin-bottom: 10px;
     }
     
@@ -233,17 +168,8 @@
       margin-bottom: 15px;
     }
     
-    .job-description {
-      margin-bottom: 15px;
-      line-height: 1.6;
-    }
-    
     .job-highlights {
-      padding-left: 20px;
-    }
-    
-    .job-highlights li {
-      margin-bottom: 8px;
+      padding-left: 0;
     }
     
     .skills-tags {
@@ -265,7 +191,6 @@
       text-align: center;
       padding: 1rem;
       color: #666;
-      font-size: 0.9rem;
     }
     
     @media (max-width: 768px) {
@@ -302,40 +227,17 @@
 
     <section>
       <h2>Certifications</h2>
-      <div class="certifications">
-        <div class="certification-card green-belt">
-          <div class="certification-title">Six Sigma</div>
-          <div class="belt-level">Green Belt Certified</div>
-          <div class="certification-body">
-            This certifies that Faisal Ahamed Raj Mohamed has successfully completed the requirements 
-            for Green Belt certification by demonstrating the fundamentals in the application of 
-            statistical, problem solving, and Six Sigma tools.
-          </div>
-          <div class="certification-date">11 April 2005</div>
-          <div class="signatures">
-            <div class="signature"><strong>Michel Mayer</strong></div>
-            <div>Chairman and CEO, Freescale Semiconductor</div>
-            <div class="signature" style="margin-top: 10px;"><strong>Janelle Harris</strong></div>
-            <div>SVP, Business Operations</div>
-          </div>
-        </div>
-        
-        <div class="certification-card black-belt">
-          <div class="certification-title">Six Sigma</div>
-          <div class="belt-level">Black Belt Certified</div>
-          <div class="certification-body">
-            This certifies that Faisal Ahamed Bin Raj Mohamed has successfully completed the requirements 
-            for Black Belt certification by demonstrating advanced application of statistical, 
-            problem solving, and Six Sigma methodologies.
-          </div>
-          <div class="certification-date">14 December 2010</div>
-          <div class="signatures">
-            <div class="signature"><strong>Rich Beyer</strong></div>
-            <div>Chairman and CEO, Freescale Semiconductor</div>
-            <div class="signature" style="margin-top: 10px;"><strong>Jim Baillie</strong></div>
-            <div>Vice President Quality</div>
-          </div>
-        </div>
+      
+      <div class="plaque-container">
+        <h3>Six Sigma Green Belt</h3>
+        <img class="certification-plaque" src="https://i.postimg.cc/3xqFbKvN/IMG-20250512-WA0004.jpg" alt="Six Sigma Green Belt Certification Plaque">
+        <div class="certification-date">Awarded: 11 April 2005</div>
+      </div>
+      
+      <div class="plaque-container">
+        <h3>Six Sigma Black Belt</h3>
+        <img class="certification-plaque" src="https://i.postimg.cc/3xqFbKvN/IMG-20250512-WA0005.jpg" alt="Six Sigma Black Belt Certification Plaque">
+        <div class="certification-date">Awarded: 14 December 2010</div>
       </div>
     </section>
 
@@ -353,11 +255,6 @@
             <div class="job-duration">Apr 2024 - Present</div>
           </div>
           <div class="job-location">Kuala Lumpur, Malaysia · On-site</div>
-          <div class="job-description">
-            After completing 8+ years of service as a Senior Principal Test Development Engineer at NXP Semiconductors, 
-            I took a short career break to pursue personal goals. I am now actively seeking new opportunities in RF testing, 
-            semiconductor test/product engineering, or smart manufacturing.
-          </div>
           <ul class="job-highlights">
             <li>Open to full-time or contract roles where I can apply my deep industry knowledge</li>
             <li>Seeking positions to contribute to innovation and lead test development or product engineering initiatives</li>
@@ -446,7 +343,7 @@
       </div>
     </section>
 
-    <section class="projects-section">
+    <section>
       <h2>Key Projects</h2>
       <ul>
         <li><strong>Project Aloha</strong> - AI optimization for RF product-line using machine learning algorithms</li>
@@ -456,7 +353,7 @@
       </ul>
     </section>
 
-    <section class="contact-info">
+    <section>
       <h2>Contact</h2>
       <p><strong>Email:</strong> faisalking3rd@gmail.com / Faizal_1500@yahoo.com</p>
       <p><strong>Phone:</strong> +6011 370 68683</p>
