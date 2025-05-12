@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body {
+      background-color: #007BFF !important;
+      color: white;
+    }
+  </style>
+</head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faisal Ahamed - Senior Principal Test Development Engineer</title>
