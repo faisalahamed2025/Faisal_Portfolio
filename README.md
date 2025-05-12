@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -230,7 +230,7 @@
       
       <div class="plaque-container">
         <h3>Six Sigma Green Belt</h3>
-        <img class="certification-plaque" src="https://i.postimg.cc/3xqFbKvN/IMG-20250512-WA0004.jpg" alt="Six Sigma Green Belt Certification Plaque">
+        <img class="certification-plaque" src="https://postimg.cc/xNqPN9N4][img]https://i.postimg.cc/xNqPN9N4/6-Sg-Green-Blet.png[/img" alt="Six Sigma Green Belt Certification Plaque">
         <div class="certification-date">Awarded: 11 April 2005</div>
       </div>
       
