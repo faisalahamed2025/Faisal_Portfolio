@@ -230,13 +230,13 @@
       
       <div class="plaque-container">
         <h3>Six Sigma Green Belt</h3>
-        <img class="certification-plaque" src="https://i.postimg.cc/vTt2jBYb/6-Sg-Green-Blet.png" alt="Six Sigma Green Belt Certification Plaque">
+        <img class="certification-plaque" src="https://i.postimg.cc/T2C05B4y/greenbelt.jpg" alt="Six Sigma Green Belt Certification Plaque">
         <div class="certification-date">Awarded: 11 April 2005</div>
       </div>
       
       <div class="plaque-container">
         <h3>Six Sigma Black Belt</h3>
-        <img class="certification-plaque" src="https://i.postimg.cc/Dz4jh5vC/6-Sg-Black-Belt.png" alt="Six Sigma Black Belt Certification Plaque">
+        <img class="certification-plaque" src="https://i.postimg.cc/zvtkmRgw/blackbelt.jpg" alt="Six Sigma Black Belt Certification Plaque">
         <div class="certification-date">Awarded: 14 December 2010</div>
       </div>
     </section>
