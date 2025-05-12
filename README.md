@@ -30,6 +30,12 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
+      <div style="text-align:center; padding: 50px;">
+  <h1 style="color:white;">My Portfolio</h1>
+  <a href="assets/Faisal_Portfolio.pdf" download style="color:white; font-size:20px; text-decoration:underline;">
+    Download PDF
+  </a>
+</div>
     }
     
     header {
