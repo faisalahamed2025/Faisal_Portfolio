@@ -215,7 +215,7 @@
 <body>
   <div class="container">
     <header>
-      <img class="profile-pic" src=<a href="https://postimg.cc/t7hzDXTJ" target="_blank"><img src="https://i.postimg.cc/t7hzDXTJ/6-Sg-Black-Belt.png" alt=" alt="Faisal Ahamed">
+      <img class="profile-pic" src=<a href="https://postimg.cc/t7hzDXTJ" target="src="https://i.postimg.cc/t7hzDXTJ/6-Sg-Black-Belt.png"><img alt=" alt="Faisal Ahamed">
       <h1>Faisal Ahamed</h1>
       <p>Senior Principal Test Development Engineer</p>
     </header>
