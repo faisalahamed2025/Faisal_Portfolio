@@ -1,63 +1,155 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faisal Ahamed - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faisal Ahamed - Senior Principal Test Development Engineer</title>
   <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+      --gray: #95a5a6;
+    }
+    
     body {
-      font-family: Arial, sans-serif;
-      background: url('https://www.transparenttextures.com/patterns/circles.png'), linear-gradient(to bottom right, #cce0ff, #ffffff);
-      background-repeat: repeat;
-      color: #333;
-      padding: 40px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background-color: #f5f7fa;
+      color: var(--dark);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
-    header {
-      background-color: #003366;
-      color: white;
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
       padding: 20px;
-      text-align: center;
-      border-radius: 10px;
     }
+    
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--secondary);
+    }
+    
     .profile-pic {
       width: 150px;
-      border-radius: 100px;
-      border: 4px solid #fff;
-      margin-top: 20px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--secondary);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+    
+    .header-text h1 {
+      color: var(--primary);
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    
+    .header-text p {
+      color: var(--accent);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 5px 0 0;
+    }
+    
     section {
-      margin-top: 40px;
+      margin-bottom: 30px;
     }
+    
     h2 {
-      color: #003366;
+      color: var(--primary);
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 5px;
+      display: inline-block;
+      margin-bottom: 15px;
     }
+    
     ul {
-      list-style-type: disc;
-      margin-left: 20px;
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      list-style-type: none;
+    }
+    
+    li:before {
+      content: "•";
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    
+    .contact-info {
+      background-color: var(--light);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    
+    .contact-info p {
+      margin: 5px 0;
+    }
+    
+    .email {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .header-text h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Faisal Ahamed</h1>
-    <p>Senior Principal Test Development Engineer</p>
-    <img class="profile-pic" src="https://media.licdn.com/dms/image/D5603AQHeYGtD1ZuFEQ/profile-displayphoto-shrink_800_800/0/1714911730366?e=2147483647&v=beta&t=vE9x2YmDtgBeKHh7qM0k_x3AewxKn5M2Lo5N0zPEyXE" alt="Faisal Ahamed Profile Picture" />
-  </header>  <section>
-    <h2>Summary</h2>
-    <p>Over 24 years of experience in semiconductor test development, RF applications, NPI execution, yield enhancement, and failure analysis. Experienced in integrating AI into RF systems and testing solutions for smart diagnostics and predictive maintenance.</p>
-  </section>  <section>
-    <h2>Key Projects</h2>
-    <ul>
-      <li>RF Load Board Design for 5G and Wi-Fi 6 Products</li>
-      <li>Automated Test Program Development for High-Volume RF Production</li>
-      <li>AI-Driven Failure Pattern Recognition and Root Cause Prediction</li>
-      <li>Cost-Optimized NPI Transfer and Qualification to Offshore Sites</li>
-      <li>Low Yield Recovery Programs Leading to >20% Yield Gains</li>
-    </ul>
-  </section>  <section>
-    <h2>Contact</h2>
-    <p>Email: faisalking3rd@gmail.com / Faizal_1500@yahoo.com</p>
-    <p>Phone: +6011 370 68683</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/faisal-ahamed-876aa417" target="_blank">linkedin.com/in/faisal-ahamed-876aa417</a></p>
-  </section>
+  <div class="container">
+    <header>
+      <img class="profile-pic" src="https://i.postimg.cc/30xskJK9/18bcd881.jpg" alt="Faisal Ahamed">
+      <div class="header-text">
+        <h1>Faisal Ahamed</h1>
+        <p>Senior Principal Test Development Engineer</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>24+ years of experience in semiconductor test engineering with specialization in RF applications, NPI (New Product Introduction), and yield improvement.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project Aloha</strong> - AI optimization for RF product-line</li>
+        <li><strong>Project Data</strong> - Load board development with AI tuning</li>
+        <li>RF Load Board Design for 5G and Wi-Fi 6 Products</li>
+        <li>Automated Test Program Development for High-Volume RF Production</li>
+      </ul>
+    </section>
+
+    <div class="contact-info">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <span class="email">faisalking3rd@gmail.com</span></p>
+      <p><strong>Phone:</strong> +6011 370 68683</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisal-ahamed-876aa417" target="_blank">linkedin.com/in/faisal-ahamed</a></p>
+    </div>
+  </div>
 </body>
 </html>
