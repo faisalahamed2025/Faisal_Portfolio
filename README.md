@@ -236,7 +236,7 @@
       
       <div class="plaque-container">
         <h3>Six Sigma Black Belt</h3>
-        <img class="certification-plaque" src="https://i.postimg.https://postimg.cc/MfBBVHtX/blackbelt.jpg" alt="Six Sigma Black Belt Certification Plaque">
+        <img class="certification-plaque" src="https://i.postimg.cc/zvtkmRgw/blackbelt.jpg" alt="Six Sigma Black Belt Certification Plaque">
         <div class="certification-date">Awarded: 14 December 2010</div>
       </div>
     </section>
