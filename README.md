@@ -19,8 +19,8 @@ Experienced engineer with 15+ years in **Test Development** and **Product Engine
 ### Work Experience
 
 
-##NXP Malaysia Sdn Bhd Petaling Jaya, SGR, Malaysia##
-##Staff Black Belt Product Engineer January 2016 - March 2024##
+NXP Malaysia Sdn Bhd Petaling Jaya, SGR, Malaysia
+Staff Black Belt Product Engineer January 2016 - March 2024
 
 - Architected dc load board design for NTI package OM4008, LGA(4x4.5mm, 6x7.5mm, 7x10mm), PQFN(8x8mm) which
 enabled 100% conversion to new 20 Juno testers without business disconnect in 2019 and honored with multiple TEA awards.|
@@ -45,33 +45,33 @@ January 2022 to December 2023.
 Freescale Semiconductor Malaysia Sdn Bhd Petaling Jaya, SGR, Malaysia
 Staff Product Engineer January 2004 - December 2015
 
-• Resolved customer oscillation complaint on MW4IC2230 and sustained business continuity worth of USD 40 million in 2005
+- Resolved customer oscillation complaint on MW4IC2230 and sustained business continuity worth of USD 40 million in 2005
 using ADS software and clinched Bronze Medal
-• Integrated load board arrangements for MW6IC2240/MW6IC2015 business opportunity of USD 23 Million in 2005 achieved
+- Integrated load board arrangements for MW6IC2240/MW6IC2015 business opportunity of USD 23 Million in 2005 achieved
 silver medal at plantwide forum
-• Implemented DC Check Open/Short at RF tester using sift HTBASIC codes in 2006 to prevent burnt circuits reduced downtime
+- Implemented DC Check Open/Short at RF tester using sift HTBASIC codes in 2006 to prevent burnt circuits reduced downtime
 from 2 shifts to nil and secured Bronze Medal
-• Innovated RF test time reduction method in 2006 and increased throughput by 2x per shift and en rooted Bronze Medal
-• Studied M52A die mask Series Capacitance Nitride Thickness to RF Performance joint collabration characterization with
+- Innovated RF test time reduction method in 2006 and increased throughput by 2x per shift and en rooted Bronze Medal
+- Studied M52A die mask Series Capacitance Nitride Thickness to RF Performance joint collabration characterization with
 wafer fab in 2008 and elevated product yield to 99% and reached Bronze Medal
-• Eliminated Ruptured DC leaking prevention Cap Escape to Customer-MD7IC2050N in 2010 initiated Bronze Medal and
+- Eliminated Ruptured DC leaking prevention Cap Escape to Customer-MD7IC2050N in 2010 initiated Bronze Medal and
 successfully found a unique method of grounding the RF pin and disabled escapee
-• Characterized mask L15 Yield Improvement (Black belt Project) through innovative Direct Current load board routing using
+- Characterized mask L15 Yield Improvement (Black belt Project) through innovative Direct Current load board routing using
 statistical approach in 2011 and drafted Bronze Medal and demonstrated significant cost saving of USD 250K per annum
-• Developed MD7IC2050 pristine DC Board with 4 Point Kelvin System in 2011 and listed Silver Medal by improving VDs on
+- Developed MD7IC2050 pristine DC Board with 4 Point Kelvin System in 2011 and listed Silver Medal by improving VDs on
 accuracy by 50% through innovative force and sense design principle
-• Overhauled MR6VP3091 symmetrical lead shorting test Escapee to Customer by successfully recalibrated DC load board
+- Overhauled MR6VP3091 symmetrical lead shorting test Escapee to Customer by successfully recalibrated DC load board
 structure and accompanied by software changes to detect shorted leads through innovative test program in 2011 securing
 distinguished Bronze Medal
-• Executed Gross Margin improvement for RFIC Platform in 2013, capturing Bronze Medal for elevating test yield from 94%
+- Executed Gross Margin improvement for RFIC Platform in 2013, capturing Bronze Medal for elevating test yield from 94%
 to 99% by eradicating ESD issues, achieving annual cost savings of $400K.
 
 Motorola Malaysia Sdn Bhd Petaling Jaya, SGR, Malaysia
 Senior Product Engineer January 2000 - December 2003
 
-• Enhanced test capability for HPA (High Power Amplifier) by developing in-line tuning using 3 equipment namely network
+- Enhanced test capability for HPA (High Power Amplifier) by developing in-line tuning using 3 equipment namely network
 analyzer, spectrum, and signal generator with lifetime revenue of USD 200 million which conferred Bronze Medal in 2003.
-• Revamped the PA MHPA18010, boosting capability enhancement quality index from 0.5 to 1.67, facilitating device
+- Revamped the PA MHPA18010, boosting capability enhancement quality index from 0.5 to 1.67, facilitating device
 qualification with $250 million revenue, and securing a green belt DMADV project certification for exceptional statistical
 methodology in 2004.
 
