@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge" alt="View Portfolio" />
   </a>
   <a href="assets/Resume_Cert.pdf" download>
-    <img src="https://img.shields.io/badge/Resume-Certificates-orange?style=for-the-badge" alt="Download Resume" />
+    <img src="https://img.shields.io/badge/Certificates-orange?style=for-the-badge" alt="Certificates" />
    <a href="assets/" download>
     <img src="https://img.shields.io/badge/Resume-orange?style=for-the-badge" alt="Resume" />
     
