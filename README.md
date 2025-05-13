@@ -1,5 +1,5 @@
 <h1 align="center">Faisal Ahamed – Senior Principal Test Development Engineer</h1>
-| ![Cert 1](assets/Selfimage.jpg)
+| (assets/Selfimage.jpg)
 <p align="center">
   <a href="https://faisalahamed2025.github.io/Faisal_Portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge" alt="View Portfolio" />
