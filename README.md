@@ -1,6 +1,7 @@
-
+<div style="text-align: center;">
+  <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;">
+</div>
 <h1 align="center">Faisal Ahamed – Senior Principal Test Development Engineer</h1>
-<img  src="assets/Selfimage.jpg" alt="Faisal Ahamed">
 <p align="center">
   <a href="https://faisalahamed2025.github.io/Faisal_Portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge" alt="View Portfolio" />
