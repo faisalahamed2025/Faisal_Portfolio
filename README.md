@@ -23,7 +23,7 @@ NXP Malaysia Sdn Bhd Petaling Jaya, SGR, Malaysia
 Staff Black Belt Product Engineer January 2016 - March 2024
 
 • Architected dc load board design for NTI package OM4008, LGA(4x4.5mm, 6x7.5mm, 7x10mm), PQFN(8x8mm) which
-enabled 100% conversion to new 20 Juno testers without business disconnect in 2019 and honored with multiple TEA awards.
+enabled 100% conversion to new 20 Juno testers without business disconnect in 2019 and honored with multiple TEA awards.|
 • Led a diverse team of 5 specialists across Leaded, BGA, RF, Sensor, and Quality; formed a plantwide DMAIC team that
 excelled in reducing customer quality complaints by 50% in 2018, garnering several accolades.
 • Coordinated a multi-functional team from engineering, design, manufacturing, and quality assurance for Macro GAN NPI in
