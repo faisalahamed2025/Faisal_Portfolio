@@ -39,8 +39,6 @@
   <h1 style="color:white;">My Portfolio</h1>
   <a href="assets/Resume_Cert.pdf" download style="color:white; font-size:20px; text-decoration:underline;">
     Download PDF
-
-    
     header {
       background: var(--primary);
       color: white;
