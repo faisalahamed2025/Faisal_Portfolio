@@ -80,8 +80,8 @@ methodology in 2004.
 
 | ![Cert 1](assets/plague1.jpg) | ![Cert 2](assets/plague2.jpg) |
 |-------------------------------|-------------------------------|
-!| ![Cert 3](assets/plague3.jpg) | ![Cert 4](assets/plague4.jpg) |
-!| ![Cert 5](assets/plague5.jpg) | ![Cert 6](assets/plague6.jpg) |
+!| ![Cert 3](assets/plague3.jpg) | !![Cert 4](assets/plague4.jpg) |
+!| ![Cert 5](assets/plague5.jpg) | !![Cert 6](assets/plague6.jpg) |
 
 !> Add or rename images as needed in the `assets/` folder. Use `.jpg` or `.png` format.
 
