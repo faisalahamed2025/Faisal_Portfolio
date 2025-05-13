@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faisal Ahamed - Senior Principal Test Development Engineer</title>
+     <a href="assets/Resume_Cert.pdf" download>📄 Download My Resume Supporting Cerificates</a>
   <style>
     :root {
       --primary: #003366;
@@ -373,7 +374,7 @@
       <p><strong>Phone:</strong> +6011 370 68683</p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisal-ahamed-876aa417" target="_blank">linkedin.com/in/faisal-ahamed-876aa417</a></p>
     </section>
-    <a href="assets/Resume_Cert.pdf" download>📄 Download My Resume</a>
+ 
 
 
     <footer>
