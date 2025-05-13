@@ -75,33 +75,7 @@ Experienced engineer with 15+ years in **Test Development** and **Product Engine
           <li>Designed load board with 99.5% first-pass success</li>
           <li>Improved yield by 18% and created SOPs</li>
         </ul>
-        <div class="skills-tags">
-          <span class="skill-tag">Product Engineering</span>
-          <span class="skill-tag">Failure Analysis</span>
-          <span class="skill-tag">Test Optimization</span>
-        </div>
-      </div>
 
-      <div class="experience-card">
-        <div class="company-header">
-          <div>
-            <div class="job-title">Senior Test Development Engineer</div>
-            <div class="company-name">Motorola Semiconductor</div>
-          </div>
-          <div class="job-duration">Feb 2000 - Jun 2004</div>
-        </div>
-        <div class="job-location">Petaling Jaya, Malaysia · On-site</div>
-        <ul class="job-highlights">
-          <li>Developed production test solutions for 10+ analog/RF products</li>
-          <li>Reduced ATE cost by 12% and improved yield by 22%</li>
-          <li>Contributed to ISO audits and accelerated NPI launches</li>
-        </ul>
-        <div class="skills-tags">
-          <span class="skill-tag">Analog Testing</span>
-          <span class="skill-tag">ATE Hardware</span>
-          <span class="skill-tag">ISO Compliance</span>
-        </div>
-      </div>
 
 
 ### Certifications & Awards
