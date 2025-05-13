@@ -23,21 +23,21 @@ NXP Malaysia Sdn Bhd Petaling Jaya, SGR, Malaysia
 Staff Black Belt Product Engineer January 2016 - March 2024
 
 • Architected dc load board design for NTI package OM4008, LGA(4x4.5mm, 6x7.5mm, 7x10mm), PQFN(8x8mm) which
-enabled 100% conversion to new 20 Juno testers without business disconnect in 2019 and honored with multiple TEA awards
+enabled 100% conversion to new 20 Juno testers without business disconnect in 2019 and honored with multiple TEA awards.
 • Led a diverse team of 5 specialists across Leaded, BGA, RF, Sensor, and Quality; formed a plantwide DMAIC team that
 excelled in reducing customer quality complaints by 50% in 2018, garnering several accolades.
 • Coordinated a multi-functional team from engineering, design, manufacturing, and quality assurance for Macro GAN NPI in
-SOE package, achieving $200M in lifetime revenue in 2019 with highest ASP in new Gan 4.5 technology
+SOE package, achieving $200M in lifetime revenue in 2019 with highest ASP in new Gan 4.5 technology.
 • Spearheaded NTI/NPI product in 7x10mm DMS module GAN in 2020 which translated to USD 100 million in sales and
-enabled 10 testers duplicated for increased run rates
+enabled 10 testers duplicated for increased run rates.
 • Engineered the first PLD package from Cassini platform to NI platform in 2021 to increase capacity by reducing test time by
-25%
+25%.
 • Launched state of the art NTI (New Technology Introduction) top cooling heatsink package Triseca(14x10mm) and secured
-socket win of USD 68 million in 2019
+socket win of USD 68 million in 2019.
 • Championed test program development and DC hardware readiness for state of the art NTI 20x16mm mid-power module
 which translated to USD 120 million revenue in 2024.
 • Introduced more than 50 NPIs with high gross margins and significantly contributed to company revenue growth from 2000
-to 2024
+to 2024.
 • Facilitated customer quality incident on Silicon Germanium digital product line by engaging business group in which the
 product launched with quality fix to memory read/write error with sales of 2 million parts with USD 40 million revenue from
 January 2022 to December 2023.
