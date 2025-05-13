@@ -16,8 +16,8 @@
     }
     
     body {
-      background-color: #007BFF !important;
-      color: white;
+      !background-color: #007BFF !important;
+     ! color: white;
       font-family: 'Segoe UI', system-ui, sans-serif;
       background: #f5f5f5;
       color: var(--dark);
