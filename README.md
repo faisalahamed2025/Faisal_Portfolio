@@ -40,26 +40,7 @@
   <h1 style="color:white;">My Portfolio</h1>
   <a href="assets/Resume_Cert.pdf" download style="color:white; font-size:20px; text-decoration:underline;">
     Download PDF
-    <style>
-.download-btn {
-  display: inline-block;
-  background-color: #007BFF;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
 
-.download-btn:hover {
-  background-color: #0056b3;
-}
-</style>
-  </a>
-</div>
-    }
     
     header {
       background: var(--primary);
