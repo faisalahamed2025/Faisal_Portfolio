@@ -8,8 +8,7 @@
     <img src="https://img.shields.io/badge/Certificates-orange?style=for-the-badge" alt="Certificates" />
    <a href="assets/" download>
     <img src="https://img.shields.io/badge/Resume-green?style=for-the-badge" alt="Resume" />
-    
-  </a>
+    </a>
 </p>
 
 ---
