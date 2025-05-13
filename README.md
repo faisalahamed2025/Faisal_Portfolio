@@ -14,7 +14,6 @@
       --sixsigma-green: #009b77;
       --sixsigma-black: #333333;
     }
-    
     body {
     <div style="text-align:center; padding: 50px;">
   <h1 style="color:white;">My Portfolio</h1>
