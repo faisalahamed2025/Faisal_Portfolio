@@ -1,131 +1,167 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head><style>
-  body {
-    background-color: #e6f2ff; /* Light blue */
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230066cc' fill-opacity='0.2'%3E%3Cpath d='M30 0 L35 10 L25 10 Z'/%3E%3Cpath d='M0 30 L10 35 L10 25 Z'/%3E%3Cpath d='M60 30 L50 35 L50 25 Z'/%3E%3Cpath d='M30 60 L25 50 L35 50 Z'/%3E%3C/g%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: contain;
-  }
-</style>
- <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faisal Ahamed Portfolio</title>
+  <title>Faisal Ahamed | Test Engineer Portfolio</title>
   <style>
+    /* Animated gradient background */
     body {
-      background-color: #e6f2ff;
-      background-image: url('https://www.transparenttextures.com/patterns/electric.png');
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a40);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
     }
-    .content {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    h1, h2, h3 {
+
+    header {
       text-align: center;
+      padding: 60px 20px;
     }
-    .certifications img {
-      max-width: 100%;
-      height: auto;
-      margin: 10px;
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
     }
-    .contact, .about, .work {
-      margin-bottom: 40px;
+
+    header h3 {
+      font-weight: normal;
+      margin-top: 10px;
     }
-    .cert-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
     }
-    .cert-grid img {
-      width: 200px;
-      margin: 10px;
+
+    nav a {
+      text-decoration: none;
+      color: #00ffff;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+    }
+
+    .button-group {
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #00ffff;
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #00cccc;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <div style="text-align: center;">
-      <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;">
+
+  <header>
+    <h1>Faisal Ahamed Bin Raj Mohamed</h1>
+    <h3>Senior Staff Product/Test Engineer | RF Test | ATE | NPI | Loadboard | Yield</h3>
+    <div class="button-group">
+      <a class="button" href="#contact">Contact Me</a>
+      <a class="button" href="Faisal_Ahamed_Resume.pdf" download>Download Resume</a>
     </div>
-    <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
-    <p align="center">
-      <a href="https://faisalahamed2025.github.io/Faisal_Portfolio/" target="_blank">
-        <img src="https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge" alt="View Portfolio" />
-      </a>
-      <a href="assets/Resume_Cert.pdf" download>
-        <img src="https://img.shields.io/badge/Download-Resume-orange?style=for-the-badge" alt="Download Resume" />
-      </a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Senior Staff Test/Product Engineer with over 15 years in the semiconductor industry, 
+      specializing in RF test development, ATE platform automation, and NPI for high-performance products.
     </p>
-    <hr>
+  </section>
 
-    <div class="about">
-      <h2>About Me</h2>
-      <p>Experienced engineer with 15+ years in <strong>Test Development</strong> and <strong>Product Engineering</strong> in the semiconductor industry. Proven track record in <strong>RF characterization</strong>, <strong>load board design</strong>, and <strong>new product introduction (NPI)</strong>. Certified Six Sigma Green & Black Belt.</p>
-    </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>RF Test Development</li>
+      <li>ATE (ATE RF/Analog/Mixed-Signal)</li>
+      <li>Load Board & Test HW Design</li>
+      <li>Data Analytics & Yield Improvement</li>
+      <li>NPI & Volume Ramp</li>
+      <li>Python, Perl, and SQL</li>
+    </ul>
+  </section>
 
-    <div class="work">
-      <h2>Work Experience</h2>
-      <p><strong>NXP Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br>
-      <em>Staff Black Belt Product Engineer</em> – January 2016 to March 2024</p>
-      <ul>
-        <li>Architected dc load board design... honored with multiple TEA awards.</li>
-        <li>Led a diverse team... reducing customer quality complaints by 50%.</li>
-        <li>Coordinated multi-functional team for Macro GAN NPI... $200M revenue.</li>
-        <li>Spearheaded NTI/NPI product... USD 100 million in sales.</li>
-        <li>Engineered first PLD package... reducing test time by 25%.</li>
-        <li>Launched top cooling heatsink package... USD 68 million socket win.</li>
-        <li>Championed test program development... USD 120 million revenue.</li>
-        <li>Introduced 50+ NPIs... significant revenue growth.</li>
-        <li>Resolved customer quality issue on Silicon Germanium... USD 40 million revenue.</li>
-      </ul>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>NXP Malaysia Sdn Bhd</strong><br/>Jan 2016 – Mar 2024<br/>
+      - Led RF product test development for automotive and IoT chips.<br/>
+      - Delivered 12+ successful NPIs and reduced test cycle time by 40% using data analytics.<br/>
+      - Cross-functional coordination with R&D, QA, FA, and manufacturing.
+    </p>
+    <p><strong>Freescale Semiconductor Malaysia</strong><br/>2004 – 2015<br/>
+      - Spearheaded load board designs and RF characterization.<br/>
+      - Developed robust correlation strategies across sites and platforms.<br/>
+      - Mentored junior engineers and drove continuous improvement projects.
+    </p>
+  </section>
 
-      <p><strong>Freescale Semiconductor Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br>
-      <em>Staff Product Engineer</em> – January 2004 to December 2015</p>
-      <ul>
-        <li>Resolved oscillation complaint... USD 40 million in 2005.</li>
-        <li>Integrated load board... USD 23 million in 2005.</li>
-        <li>Implemented DC Check... reduced downtime to nil.</li>
-        <li>Innovated RF test time reduction... 2x throughput.</li>
-        <li>Characterized wafer fab thickness... yield to 99%.</li>
-        <li>Eliminated DC leaking... initiated Bronze Medal in 2010.</li>
-        <li>Improved yield... cost saving USD 250K annually.</li>
-        <li>Developed pristine DC board... improved VDs accuracy by 50%.</li>
-        <li>Overhauled symmetrical lead shorting... Bronze Medal in 2011.</li>
-        <li>Improved RFIC Platform yield... $400K annual savings.</li>
-      </ul>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>5G FEM Characterization and Test Development on NI STS</li>
+      <li>Automated Yield Dashboard Using Python/Flask and MySQL</li>
+    </ul>
+  </section>
 
-      <p><strong>Motorola Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br>
-      <em>Senior Product Engineer</em> – January 2000 to December 2003</p>
-      <ul>
-        <li>Enhanced HPA test capability... USD 200 million revenue.</li>
-        <li>Revamped MHPA18010... $250 million revenue, DMADV certification.</li>
-      </ul>
-    </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:faisal.engineer2025@gmail.com" style="color:#00ffff;">faisal.engineer2025@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/faisal-testengineer" target="_blank" style="color:#00ffff;">linkedin.com/in/faisal-testengineer</a></p>
+    <p>Location: Kuala Lumpur, Malaysia</p>
+  </section>
 
-    <div class="certifications">
-      <h2>Certifications & Awards</h2>
-      <div class="cert-grid">
-        <img src="assets/plague1.jpg" alt="Cert 1" />
-        <img src="assets/plague2.jpg" alt="Cert 2" />
-        <img src="assets/plague3.jpg" alt="Cert 3" />
-        <img src="assets/plague4.jpg" alt="Cert 4" />
-        <img src="assets/plague5.jpg" alt="Cert 5" />
-        <img src="assets/plague6.jpg" alt="Cert 6" />
-      </div>
-    </div>
+  <footer>
+    &copy; 2025 Faisal Ahamed. All rights reserved.
+  </footer>
 
-    <div class="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> faisal.engineer2025@gmail.com</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisal-ahamed">linkedin.com/in/faisal-ahamed</a></p>
-      <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
-    </div>
-  </div>
 </body>
 </html>
