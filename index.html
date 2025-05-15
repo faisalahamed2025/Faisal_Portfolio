@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><style>
-</style>
- <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Faisal Ahamed Portfolio</title>
   <style>
     body {
-      background-color: #D2B48C ;
+      background-color: #D2B48C;
       background-image: url('assets/4127298.jpg');
       font-family: Arial, sans-serif;
       margin: 0;
@@ -22,50 +21,80 @@
     h1, h2, h3 {
       text-align: center;
     }
-    .certifications img {
-      max-width: 100%;
-      height: auto;
-      margin: 10px;
+    p a img {
+      margin: 0 10px;
     }
-    .contact, .about, .work {
+    /* Overlay background for better text readability */
+    .about, .work, .contact, .certifications {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 8px;
+      color: #333;
       margin-bottom: 40px;
+    }
+    .certifications ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
     }
     .cert-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
     }
-    .cert-grid img {
-      width: 400px;
-      margin: 10px;
+    .plaque-container {
+      max-width: 400px;
+      text-align: center;
+    }
+    .plaque-container img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .certification-date {
+      font-style: italic;
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #555;
+    }
+    /* Responsive images */
+    @media (max-width: 440px) {
+      .cert-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .plaque-container {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="content">
     <div style="text-align: center;">
-      <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;">
+      <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;" />
     </div>
-    <div style="color: white;">
-    <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
-    <p align="center">
-      <a href="assets/Faisal_04_07_2024_Resume.pdf" download>
-        <img src="https://img.shields.io/badge/Download-Resume-blue?style=for-the-badge" alt="Download Resume" />
-      </a>
-      <a href="assets/Resume_Cert.pdf" download>
-        <img src="https://img.shields.io/badge/Download-Resume Cert-orange?style=for-the-badge" alt="Download Resume Cert" />
-      </a>
-    </p>
-    <hr>
 
     <div class="about">
+      <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
+      <p align="center">
+        <a href="assets/Faisal_04_07_2024_Resume.pdf" download>
+          <img src="https://img.shields.io/badge/Download-Resume-blue?style=for-the-badge" alt="Download Resume" />
+        </a>
+        <a href="assets/Resume_Cert.pdf" download>
+          <img src="https://img.shields.io/badge/Download-Resume Cert-orange?style=for-the-badge" alt="Download Resume Cert" />
+        </a>
+      </p>
+      <hr />
       <h2>About Me</h2>
       <p>Experienced engineer with 15+ years in <strong>Test Development</strong> and <strong>Product Engineering</strong> in the semiconductor industry. Proven track record in <strong>RF characterization</strong>, <strong>load board design</strong>, and <strong>new product introduction (NPI)</strong>. Certified Six Sigma Green & Black Belt.</p>
     </div>
 
     <div class="work">
       <h2>Work Experience</h2>
-      <p><strong>NXP Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br>
+      <p><strong>NXP Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
       <em>Staff Black Belt Product Engineer</em> – January 2016 to March 2024</p>
       <ul>
         <li>Architected dc load board design... honored with multiple TEA awards.</li>
@@ -79,7 +108,7 @@
         <li>Resolved customer quality issue on Silicon Germanium... USD 40 million revenue.</li>
       </ul>
 
-      <p><strong>Freescale Semiconductor Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br>
+      <p><strong>Freescale Semiconductor Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
       <em>Staff Product Engineer</em> – January 2004 to December 2015</p>
       <ul>
         <li>Resolved oscillation complaint... USD 40 million in 2005.</li>
@@ -94,7 +123,7 @@
         <li>Improved RFIC Platform yield... $400K annual savings.</li>
       </ul>
 
-      <p><strong>Motorola Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br>
+      <p><strong>Motorola Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
       <em>Senior Product Engineer</em> – January 2000 to December 2003</p>
       <ul>
         <li>Enhanced HPA test capability... USD 200 million revenue.</li>
@@ -104,7 +133,7 @@
 
     <div class="certifications">
       <h2>Certifications & Awards</h2>
-     <ul>
+      <ul>
         <li>Six Sigma BlackBelt Certification.</li>
         <li>Six Sigma GreenBelt Certification.</li>
         <li>NI Labview Developer Certification.</li>
@@ -112,31 +141,35 @@
         <li>Peer To Peer Global Award.</li>
         <li>Bravo Best Engineer Factory Award.</li>
         <li>Diamond Chip CEO Award.</li>
-         
-      
-     <div class="cert-grid">
+      </ul>
+
+      <div class="cert-grid">
         <div class="plaque-container">
-        <h3>Six Sigma Black Belt</h3>
-        <div class="certification-date">Awarded By CEO Mr.Rich Beyer On 14th December 2010</div> 
-       <img src="assets/plague1.jpg" alt="Cert 1" />
+          <h3>Six Sigma Black Belt</h3>
+          <div class="certification-date">Awarded By CEO Mr.Rich Beyer On 14th December 2010</div>
+          <img src="assets/plague1.jpg" alt="Six Sigma Black Belt Certificate" />
         </div>
-        
+
         <div class="plaque-container">
-        <h3>Six Sigma Green Belt</h3>
-        <div class="certification-date">Awarded By CEO Mr.Michel Mayer On 11th April 2005</div>
-        <img src="assets/plague2.jpg" alt="Cert 2" />
+          <h3>Six Sigma Green Belt</h3>
+          <div class="certification-date">Awarded By CEO Mr.Michel Mayer On 11th April 2005</div>
+          <img src="assets/plague2.jpg" alt="Six Sigma Green Belt Certificate" />
         </div>
-       
-      <img src="assets/plague3.jpg" alt="Cert 3" />
-       <img src="assets/plague4.jpg" alt="Cert 4" />
-       <img src="assets/plague5.jpg" alt="Cert 5" />
-       <img src="assets/plague6.jpg" alt="Cert 6" />
-       
+
         <div class="plaque-container">
-        <h3> CEO Diamond Chip Award</h3>
-        <div class="certification-date">Awarded By CEO Mr.Gregg Lowe On 14th June 2015</div>
-         <img src="assets/plague7.jpg" alt="Cert 7" />
-         </div>
+          <h3>Other Awards</h3>
+          <img src="assets/plague3.jpg" alt="Award 3" />
+          <img src="assets/plague4.jpg" alt="Award 4" />
+          <img src="assets/plague5.jpg" alt="Award 5" />
+          <img src="assets/plague6.jpg" alt="Award 6" />
+        </div>
+
+        <div class="plaque-container">
+          <h3>CEO Diamond Chip Award</h3>
+          <div class="certification-date">Awarded By CEO Mr.Gregg Lowe On 14th June 2015</div>
+          <img src="assets/plague7.jpg" alt="CEO Diamond Chip Award" />
+        </div>
+      </div>
     </div>
 
     <div class="contact">
