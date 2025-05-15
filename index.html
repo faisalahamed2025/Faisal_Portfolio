@@ -1,294 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Faisal Ahamed Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Certificate Gallery with Lightbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      background-color: #D2B48C;
-      background-image: url('assets/4127298.jpg');
       font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 40px;
       margin: 0;
-      padding: 0;
-      color: #333;
     }
-    .content {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2, h3 {
+
+    h2 {
       text-align: center;
-    }
-    p a img {
-      margin: 0 10px;
-    }
-    /* Overlay background for better text readability */
-    .about, .work, .contact, .certifications {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 20px;
-      border-radius: 8px;
-      color: #333;
-      margin-bottom: 40px;
-    }
-    .certifications ul {
-      padding-left: 20px;
       margin-bottom: 30px;
+      color: #333;
     }
+
     .cert-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
-    .plaque-container {
-      max-width: 200px;
-      text-align: center;
-    }
-    .plaque-container img {
-      width: 100%;
-      height: auto;
-      margin-top: 10px;
-      border-radius: 4px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
-    .certification-date {
-      font-style: italic;
-      font-size: 0.9em;
-      margin-top: 5px;
-      color: #555;
-    }
-    /* Responsive images */
-    @media (max-width: 440px) {
+
+    @media (max-width: 900px) {
       .cert-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
       }
-      .plaque-container {
-        max-width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
       }
+    }
+
+    .cert-item {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .cert-item img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .cert-item img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .close-lightbox {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .close-lightbox:hover {
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <div style="text-align: center;">
-      <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;" />
+
+  <h2>Certifications</h2>
+
+  <div class="cert-grid">
+    <div class="cert-item">
+      <a href="#img1"><img src="cert1.jpg" alt="Certificate 1"></a>
     </div>
-
-    <div class="about">
-      <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
-      <p align="center">
-        <a href="assets/Faisal_04_07_2024_Resume.pdf" download>
-          <img src="https://img.shields.io/badge/Download-Resume-blue?style=for-the-badge" alt="Download Resume" />
-        </a>
-        <a href="assets/Resume_Cert.pdf" download>
-          <img src="https://img.shields.io/badge/Download-Resume Cert-orange?style=for-the-badge" alt="Download Resume Cert" />
-        </a>
-      </p>
-      <hr />
-      <h2>About Me</h2>
-      <p>Experienced engineer with 15+ years in <strong>Test Development</strong> and <strong>Product Engineering</strong> in the semiconductor industry. Proven track record in <strong>RF characterization</strong>, <strong>load board design</strong>, and <strong>new product introduction (NPI)</strong>. Certified Six Sigma Green & Black Belt.</p>
+    <div class="cert-item">
+      <a href="#img2"><img src="cert2.jpg" alt="Certificate 2"></a>
     </div>
-
-    <div class="work">
-    <h2>Work Experience</h2>
-     <p><strong>Independent / Career Break</strong>, Kuala Lumpur, Malaysia<br />
-      <em>Senior Staff Test/Product Development Engineer (Open to Opportunities)</em> – March 2024 to Present</p>
-      <ul>
-        After completing 8+ years of service as a Senior Principal Test Development Engineer at NXP Semiconductors, 
-        I took a short career break to pursue personal goals. I am now actively seeking new opportunities in RF testing, 
-        semiconductor test/product engineering, or smart manufacturing.
-        
-      <p><strong>NXP Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
-      <em>Senior Staff Test/Product Development Engineer </em> – January 2016 to March 2024</p>
-      <ul>
-        <li>Architected dc load board design... honored with multiple TEA awards.</li>
-        <li>Led a diverse team... reducing customer quality complaints by 50%.</li>
-        <li>Coordinated multi-functional team for Macro GAN NPI... $200M revenue.</li>
-        <li>Spearheaded NTI/NPI product... USD 100 million in sales.</li>
-        <li>Engineered first PLD package... reducing test time by 25%.</li>
-        <li>Launched top cooling heatsink package... USD 68 million socket win.</li>
-        <li>Championed test program development... USD 120 million revenue.</li>
-        <li>Introduced 50+ NPIs... significant revenue growth.</li>
-        <li>Resolved customer quality issue on Silicon Germanium... USD 40 million revenue.</li>
-      </ul>
-
-      <p><strong>Freescale Semiconductor Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
-      <em>Staff Product Engineer</em> – January 2004 to December 2015</p>
-      <ul>
-        <li>Resolved oscillation complaint... USD 40 million in 2005.</li>
-        <li>Integrated load board... USD 23 million in 2005.</li>
-        <li>Implemented DC Check... reduced downtime to nil.</li>
-        <li>Innovated RF test time reduction... 2x throughput.</li>
-        <li>Characterized wafer fab thickness... yield to 99%.</li>
-        <li>Eliminated DC leaking... initiated Bronze Medal in 2010.</li>
-        <li>Improved yield... cost saving USD 250K annually.</li>
-        <li>Developed pristine DC board... improved VDs accuracy by 50%.</li>
-        <li>Overhauled symmetrical lead shorting... Bronze Medal in 2011.</li>
-        <li>Improved RFIC Platform yield... $400K annual savings.</li>
-      </ul>
-
-      <p><strong>Motorola Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
-      <em>Senior Product Engineer</em> – January 2000 to December 2003</p>
-      <ul>
-        <li>Enhanced HPA test capability... USD 200 million revenue.</li>
-        <li>Revamped MHPA18010... $250 million revenue, DMADV certification.</li>
-      </ul>
+    <div class="cert-item">
+      <a href="#img3"><img src="cert3.jpg" alt="Certificate 3"></a>
     </div>
-
-    <div class="certifications">
-      <h2>Executive-Level Awards (CEO & Globale Recognitions)</h2>
-      <ul>
-        <li>Six Sigma BlackBelt Certification.</li>
-        <li>Six Sigma GreenBelt Certification.</li>
-        <li>NI Labview Developer Certification.</li>
-        <li>COMAT C++ Certifications.</li>
-        <li>Peer To Peer Global Award.</li>
-        <li>Bravo Best Engineer Factory Award.</li>
-        <li>Diamond Chip CEO Award.</li>
-      </ul>
-
-      <div class="cert-grid">
-        <div class="plaque-container">
-          <h3>Six Sigma Black Belt</h3>
-          <div class="certification-date">Awarded By CEO Mr.Rich Beyer On 14th December 2010</div>
-          <img src="assets/plague1.jpg" alt="Six Sigma Black Belt Certificate" />
-          <button onclick="viewImage('assets/plague1.jpg')">View</button>
-          </div>
-
-
-        <div class="plaque-container">
-          <h3>Six Sigma Green Belt</h3>
-          <div class="certification-date">Awarded By CEO Mr.Michel Mayer On 11th April 2005</div>
-          <img src="assets/plague2.jpg" alt="Six Sigma Green Belt Certificate" />
-          <button onclick="viewImage('assets/plague2.jpg')">View</button> 
-         </div>
-
-          <div class="plaque-container">
-          <h3>NI Certification</h3>
-          <div class="certification-date">Awarded By National Instruments(Emerson) On 7th February 2023</div>
-          <img src="assets/plague3.jpg" alt="NI Certificate" />
-           <button onclick="viewImage('assets/plague3.jpg')">View</button>
-          </div>
-
-         <div class="plaque-container">
-          <h3>C++ Certification</h3>
-          <div class="certification-date">Awarded By Comat On 16th July 2002</div>
-          <img src="assets/plague4.jpg" alt="Comat C++ Certificate" />
-          <button onclick="viewImage('assets/plague4.jpg')">View</button>
-          </div>
-          
-          <div class="plaque-container">
-          <h3>Peer To Peer Award</h3>
-          <div class="certification-date">Awarded By NXP USA On 28th September 2020</div>
-          <img src="assets/plague5.jpg" alt="Peer to Peer Certificate" />
-           <button onclick="viewImage('assets/plague5.jpg')">View</button>
-          </div>
-        
-          <div class="plaque-container">
-          <h3>Factory Bravo Awards</h3>
-          <div class="certification-date">Awarded By Factory On (Q4,2015-Q2,2016) </div>
-           <img src="assets/plague6.jpg" alt="Factory Bravo Award" />
-            <button onclick="viewImage('assets/plague6.jpg')">View</button>
-           </div>
-        
-          <div class="plaque-container">
-          <h3>CEO Diamond ChipAward</h3>
-          <div class="certification-date">Awarded By CEO Mr.Gregg Lowe On 14th June 2015</div>
-          <img src="assets/plague7.jpg" alt="CEO Diamond Chip Award" />
-          <button onclick="viewImage('assets/plague7.jpg')">View</button>
-        </div>
-      </div>
+    <div class="cert-item">
+      <a href="#img4"><img src="cert4.jpg" alt="Certificate 4"></a>
     </div>
-      <div class="certifications">
-      <h2>Factory & Department-Level Technical Excellence Awards</h2>
-      <ul>
-      <li>Triseca NTI package 14x10mm test hardware solutions and development with USD68 million life time revenue in 2023-
-           Bronze Medal. </li>
-      <li>Both Delta 1688 handler and Turret Handler integration to Juno DC tester thru dc interface board in 2017- Bronze Medal.</li>
-      <li>AFT20S015N Poka Yoke Solution for Wrong Oreintation Detection in 2015-Bronze Medal.</li>
-      <li>New Juno Tester DC Interface Design For Entire TO platfom in 2015-Bronze Medal.</li>
-      <li>Gross Margin improvement for RFIC Platform in 2013- Bronze Medal.</li>
-      <li>Total Factory Wire Bond Quality Improvement in 2013-Bronze Medal.</li>
-      <li>Error Proof MR6VP3091 adjacent lead shorting test excursion to customer in 2011-Bronze Medal.</li>
-      <li>MD7IC2050 New DC load Board Development with 4 Point Kelvin System 2011-Silver Medal.</li>
-      <li>L15 Yield Improvement Black belt Project using DMAIC approach in 2010-Bronze Medal.</li>
-      <li>Elimination of Ruptured DC blocking Cap Escape to Customer-MD7IC2050N in 2010-Bronze Medal.</li>
-      <li>M52A die mask Series Capacitance Nitride Thickness to RF Performance Characterization in 2008 -Bronze Medal.</li>
-      <li>RF test time improvement using innovative method in 2006 -Bronze Medal.</li>
-      <li>Fool Proof Burnt Circuit Elimination Thru RF Software Optimization in 2006- Bronze Medal.</li>
-      <li>Integrated Load Board Design MW6IC2240/MW6IC2015 in 2005- Silver Medal.</li>
-      <li>MW4IC2230 Customer JRC Oscillation Complaint in 2005 -Bronze Medal.</li>
-      <li>MHPA18010 PA Recharacterization in 2004 -Silver Medal.</li>
-      <li>HPA Next Generation Module in 2003 -Bronze Medal.</li>
-      </ul>
-
-        <div class="cert-grid">
-        <div class="plaque-container">
-          <h3>NTI Pristine RF Triseca DC Test Solution</h3>
-          <div class="certification-date">Awarded By MD On Q1,2023</div>
-          <img src="assets/Cert1.jpg" alt="NTI Pristine RF Triseca DC Test Solutiion" />
-          <button onclick="viewImage('assets/Cert1.jpg')">View</button>
-          <img src="assets/Pattern1.jpg" alt="NTI Pristine RF Triseca DC Test Solutiion" />
-          <button onclick="viewImage('assets/Pattern1.jpg')">View</button>
-        </div>
-        </div>
-       
-
-        <div class="cert-grid">
-        <div class="plaque-container">
-          <h3>Delta 1688(PQFN 8x8)DC Test Solution Development Using DMAIC Apporach</h3>
-          <div class="certification-date">Awarded By MD On Q3,2017</div>
-          <img src="assets/Cert2.jpg" alt="Delta 1688(PQFN 8x8)DC Test Solution Development Using DMAIC Apporach" />
-          <button onclick="viewImage('assets/Cert2.jpg')">View</button>
-          <img src="assets/Pattern2.jpg" alt="Delta 1688(PQFN 8x8)DC Test Solution Development Using DMAIC Apporach" />
-          <button onclick="viewImage('assets/Pattern2.jpg')">View</button>
-        </div>
-        </div>
-
-        
-         
-      
-      
-      </div>
-      <div class="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> faisalking3rd@gmail.com</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisal-ahamed-876aa417/">linkedin.com/in/faisal-ahamed</a></p>
-      <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
+    <div class="cert-item">
+      <a href="#img5"><img src="cert5.jpg" alt="Certificate 5"></a>
     </div>
+    <div class="cert-item">
+      <a href="#img6"><img src="cert6.jpg" alt="Certificate 6"></a>
+    </div>
+    <!-- Add more if needed -->
   </div>
+
+  <!-- Lightbox Modals -->
+  <div id="img1" class="lightbox">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="cert1.jpg" alt="Certificate 1">
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="cert2.jpg" alt="Certificate 2">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="cert3.jpg" alt="Certificate 3">
+  </div>
+  <div id="img4" class="lightbox">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="cert4.jpg" alt="Certificate 4">
+  </div>
+  <div id="img5" class="lightbox">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="cert5.jpg" alt="Certificate 5">
+  </div>
+  <div id="img6" class="lightbox">
+    <a href="#" class="close-lightbox">&times;</a>
+    <img src="cert6.jpg" alt="Certificate 6">
+  </div>
+
 </body>
 </html>
-<!-- Image Modal Viewer Script -->
-<script>
-  function viewImage(src) {
-    const modal = document.createElement("div");
-    modal.style.position = "fixed";
-    modal.style.top = "0";
-    modal.style.left = "0";
-    modal.style.width = "100%";
-    modal.style.height = "100%";
-    modal.style.backgroundColor = "rgba(0,0,0,0.8)";
-    modal.style.display = "flex";
-    modal.style.alignItems = "center";
-    modal.style.justifyContent = "center";
-    modal.style.zIndex = "9999";
-
-    const image = document.createElement("img");
-    image.src = src;
-    image.style.maxWidth = "120%";
-    image.style.maxHeight = "120%";
-    image.style.border = "4px solid white";
-    image.style.borderRadius = "10px";
-    image.style.boxShadow = "0 0 15px #000";
-
-    // Close modal on click
-    modal.onclick = () => document.body.removeChild(modal);
-
-    modal.appendChild(image);
-    document.body.appendChild(modal);
-  }
-</script>
