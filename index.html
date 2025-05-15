@@ -24,6 +24,7 @@
     p a img {
       margin: 0 10px;
     }
+    /* Overlay background for better text readability */
     .about, .work, .contact, .certifications {
       background-color: rgba(255, 255, 255, 0.85);
       padding: 20px;
@@ -58,18 +59,7 @@
       margin-top: 5px;
       color: #555;
     }
-    button {
-      margin-top: 10px;
-      padding: 5px 10px;
-      background-color: #333;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #555;
-    }
+    /* Responsive images */
     @media (max-width: 440px) {
       .cert-grid {
         flex-direction: column;
@@ -78,34 +68,6 @@
       .plaque-container {
         max-width: 100%;
       }
-    }
-    /* Fullscreen modal for certificate view */
-    #fullscreenModal {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      padding-top: 50px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.9);
-    }
-    #fullscreenModal img {
-      margin: auto;
-      display: block;
-      max-width: 90%;
-      max-height: 90%;
-    }
-    #fullscreenModal span {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
     }
   </style>
 </head>
@@ -131,110 +93,223 @@
     </div>
 
     <div class="work">
-      <h2>Work Experience</h2>
-
-      <p><strong>Independent / Career Break</strong>, Kuala Lumpur, Malaysia<br />
+    <h2>Work Experience</h2>
+     <p><strong>Independent / Career Break</strong>, Kuala Lumpur, Malaysia<br />
       <em>Senior Staff Test/Product Development Engineer (Open to Opportunities)</em> – March 2024 to Present</p>
       <ul>
-        <li>Completed 8+ years at NXP Semiconductors; currently seeking new roles in RF testing, semiconductor test/product engineering, or smart manufacturing.</li>
-      </ul>
-
+        After completing 8+ years of service as a Senior Principal Test Development Engineer at NXP Semiconductors, 
+        I took a short career break to pursue personal goals. I am now actively seeking new opportunities in RF testing, 
+        semiconductor test/product engineering, or smart manufacturing.
+        
       <p><strong>NXP Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
-      <em>Senior Staff Test/Product Development Engineer</em> – January 2016 to March 2024</p>
+      <em>Senior Staff Test/Product Development Engineer </em> – January 2016 to March 2024</p>
       <ul>
-        <li>Architected DC load board designs, honored with multiple TEA awards.</li>
-        <li>Led cross-functional teams, reducing customer complaints by 50%.</li>
-        <li>Launched Macro GAN NPI for $200M revenue.</li>
-        <li>Introduced 50+ NPIs leading to significant revenue growth.</li>
+        <li>Architected dc load board design... honored with multiple TEA awards.</li>
+        <li>Led a diverse team... reducing customer quality complaints by 50%.</li>
+        <li>Coordinated multi-functional team for Macro GAN NPI... $200M revenue.</li>
+        <li>Spearheaded NTI/NPI product... USD 100 million in sales.</li>
+        <li>Engineered first PLD package... reducing test time by 25%.</li>
+        <li>Launched top cooling heatsink package... USD 68 million socket win.</li>
+        <li>Championed test program development... USD 120 million revenue.</li>
+        <li>Introduced 50+ NPIs... significant revenue growth.</li>
+        <li>Resolved customer quality issue on Silicon Germanium... USD 40 million revenue.</li>
       </ul>
 
       <p><strong>Freescale Semiconductor Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
       <em>Staff Product Engineer</em> – January 2004 to December 2015</p>
       <ul>
-        <li>Resolved RF test issues resulting in $40M revenue growth.</li>
-        <li>Innovated yield improvements generating $250K annual savings.</li>
+        <li>Resolved oscillation complaint... USD 40 million in 2005.</li>
+        <li>Integrated load board... USD 23 million in 2005.</li>
+        <li>Implemented DC Check... reduced downtime to nil.</li>
+        <li>Innovated RF test time reduction... 2x throughput.</li>
+        <li>Characterized wafer fab thickness... yield to 99%.</li>
+        <li>Eliminated DC leaking... initiated Bronze Medal in 2010.</li>
+        <li>Improved yield... cost saving USD 250K annually.</li>
+        <li>Developed pristine DC board... improved VDs accuracy by 50%.</li>
+        <li>Overhauled symmetrical lead shorting... Bronze Medal in 2011.</li>
+        <li>Improved RFIC Platform yield... $400K annual savings.</li>
       </ul>
 
       <p><strong>Motorola Malaysia Sdn Bhd</strong>, Petaling Jaya, SGR, Malaysia<br />
       <em>Senior Product Engineer</em> – January 2000 to December 2003</p>
       <ul>
-        <li>Revamped MHPA18010 leading to $250M revenue and DMADV certification.</li>
+        <li>Enhanced HPA test capability... USD 200 million revenue.</li>
+        <li>Revamped MHPA18010... $250 million revenue, DMADV certification.</li>
       </ul>
     </div>
 
     <div class="certifications">
-      <h2>Executive-Level Awards (CEO & Global Recognitions)</h2>
+      <h2>Executive-Level Awards (CEO & Globale Recognitions)</h2>
       <ul>
-        <li>Six Sigma Black Belt Certification</li>
-        <li>Six Sigma Green Belt Certification</li>
-        <li>NI LabVIEW Developer Certification</li>
-        <li>COMAT C++ Certification</li>
-        <li>Peer To Peer Global Award</li>
-        <li>Bravo Best Engineer Factory Award</li>
-        <li>Diamond Chip CEO Award</li>
+        <li>Six Sigma BlackBelt Certification.</li>
+        <li>Six Sigma GreenBelt Certification.</li>
+        <li>NI Labview Developer Certification.</li>
+        <li>COMAT C++ Certifications.</li>
+        <li>Peer To Peer Global Award.</li>
+        <li>Bravo Best Engineer Factory Award.</li>
+        <li>Diamond Chip CEO Award.</li>
       </ul>
 
       <div class="cert-grid">
         <div class="plaque-container">
           <h3>Six Sigma Black Belt</h3>
-          <div class="certification-date">Awarded By CEO Mr. Rich Beyer on 14th December 2010</div>
+          <div class="certification-date">Awarded By CEO Mr.Rich Beyer On 14th December 2010</div>
           <img src="assets/plague1.jpg" alt="Six Sigma Black Belt Certificate" />
           <button onclick="viewImage('assets/plague1.jpg')">View</button>
-        </div>
+          </div>
+
 
         <div class="plaque-container">
           <h3>Six Sigma Green Belt</h3>
-          <div class="certification-date">Awarded By CEO Mr. Michel Mayer on 11th April 2005</div>
+          <div class="certification-date">Awarded By CEO Mr.Michel Mayer On 11th April 2005</div>
           <img src="assets/plague2.jpg" alt="Six Sigma Green Belt Certificate" />
-          <button onclick="viewImage('assets/plague2.jpg')">View</button>
-        </div>
+          <button onclick="viewImage('assets/plague2.jpg')">View</button> 
+         </div>
 
-        <div class="plaque-container">
+          <div class="plaque-container">
           <h3>NI Certification</h3>
-          <div class="certification-date">Awarded By National Instruments (Emerson) on 7th February 2023</div>
+          <div class="certification-date">Awarded By National Instruments(Emerson) On 7th February 2023</div>
           <img src="assets/plague3.jpg" alt="NI Certificate" />
-          <button onclick="viewImage('assets/plague3.jpg')">View</button>
-        </div>
+           <button onclick="viewImage('assets/plague3.jpg')">View</button>
+          </div>
 
-        <div class="plaque-container">
+         <div class="plaque-container">
           <h3>C++ Certification</h3>
-          <div class="certification-date">Awarded By Comat on 16th July 2002</div>
+          <div class="certification-date">Awarded By Comat On 16th July 2002</div>
           <img src="assets/plague4.jpg" alt="Comat C++ Certificate" />
           <button onclick="viewImage('assets/plague4.jpg')">View</button>
-        </div>
-
-        <div class="plaque-container">
+          </div>
+          
+          <div class="plaque-container">
           <h3>Peer To Peer Award</h3>
-          <div class="certification-date">Awarded By NXP USA on 28th September 2020</div>
+          <div class="certification-date">Awarded By NXP USA On 28th September 2020</div>
           <img src="assets/plague5.jpg" alt="Peer to Peer Certificate" />
-          <button onclick="viewImage('assets/plague5.jpg')">View</button>
-        </div>
-
-        <div class="plaque-container">
-          <h3>Factory Bravo Award</h3>
-          <div class="certification-date">Awarded Q4 2015 – Q2 2016</div>
-          <img src="assets/plague6.jpg" alt="Factory Bravo Award" />
-          <button onclick="viewImage('assets/plague6.jpg')">View</button>
+           <button onclick="viewImage('assets/plague5.jpg')">View</button>
+          </div>
+        
+          <div class="plaque-container">
+          <h3>Factory Bravo Awards</h3>
+          <div class="certification-date">Awarded By Factory On (Q4,2015-Q2,2016) </div>
+           <img src="assets/plague6.jpg" alt="Factory Bravo Award" />
+            <button onclick="viewImage('assets/plague6.jpg')">View</button>
+           </div>
+        
+          <div class="plaque-container">
+          <h3>CEO Diamond ChipAward</h3>
+          <div class="certification-date">Awarded By CEO Mr.Gregg Lowe On 14th June 2015</div>
+          <img src="assets/plague7.jpg" alt="CEO Diamond Chip Award" />
+          <button onclick="viewImage('assets/plague7.jpg')">View</button>
         </div>
       </div>
     </div>
+      <div class="certifications">
+      <h2>Factory & Department-Level Technical Excellence Awards</h2>
+      <ul>
+      <li>Triseca NTI package 14x10mm test hardware solutions and development with USD68 million life time revenue in 2023-
+           Bronze Medal. </li>
+      <li>Both Delta 1688 handler and Turret Handler integration to Juno DC tester thru dc interface board in 2017- Bronze Medal.</li>
+      <li>AFT20S015N Poka Yoke Solution for Wrong Oreintation Detection in 2015-Bronze Medal.</li>
+      <li>New Juno Tester DC Interface Design For Entire TO platfom in 2015-Bronze Medal.</li>
+      <li>Gross Margin improvement for RFIC Platform in 2013- Bronze Medal.</li>
+      <li>Total Factory Wire Bond Quality Improvement in 2013-Bronze Medal.</li>
+      <li>Error Proof MR6VP3091 adjacent lead shorting test excursion to customer in 2011-Bronze Medal.</li>
+      <li>MD7IC2050 New DC load Board Development with 4 Point Kelvin System 2011-Silver Medal.</li>
+      <li>L15 Yield Improvement Black belt Project using DMAIC approach in 2010-Bronze Medal.</li>
+      <li>Elimination of Ruptured DC blocking Cap Escape to Customer-MD7IC2050N in 2010-Bronze Medal.</li>
+      <li>M52A die mask Series Capacitance Nitride Thickness to RF Performance Characterization in 2008 -Bronze Medal.</li>
+      <li>RF test time improvement using innovative method in 2006 -Bronze Medal.</li>
+      <li>Fool Proof Burnt Circuit Elimination Thru RF Software Optimization in 2006- Bronze Medal.</li>
+      <li>Integrated Load Board Design MW6IC2240/MW6IC2015 in 2005- Silver Medal.</li>
+      <li>MW4IC2230 Customer JRC Oscillation Complaint in 2005 -Bronze Medal.</li>
+      <li>MHPA18010 PA Recharacterization in 2004 -Silver Medal.</li>
+      <li>HPA Next Generation Module in 2003 -Bronze Medal.</li>
+      </ul>
+
+        <div class="cert-grid">
+        
+          <div class="plaque-container">
+          <h3>NTI Pristine RF Triseca DC Test Solution</h3>
+          <div class="certification-date">Awarded By MD On Q1,2023</div>
+          <div class="medal-container">
+          <img src="assets/bronze-medal.png" alt="Bronze Medal" class="medal-icon" />
+          <span class="medal-label bronze-label">Bronze</span>
+           </div>
+          <img src="assets/Cert1.jpg" alt="NTI Pristine RF Triseca DC Test Solutiion" />
+          <button onclick="viewImage('assets/Cert1.jpg')">View</button>
+          <img src="assets/Pattern1.jpg" alt="NTI Pristine RF Triseca DC Test Solutiion" />
+          <button onclick="viewImage('assets/Pattern1.jpg')">View</button>
+           </div>
+      
+          <div class="plaque-container">
+          <h3>Delta 1688(PQFN 8x8)DC Test Solution Development Using DMAIC Apporach</h3>
+          <div class="certification-date">Awarded By MD On Q3,2017</div>
+          <div class="medal-container">
+          <img src="assets/bronze-medal.png" alt="Bronze Medal" class="medal-icon" />
+          <span class="medal-label bronze-label">Bronze</span>
+           </div>
+          <img src="assets/Cert2.jpg" alt="Delta 1688(PQFN 8x8)DC Test Solution Development Using DMAIC Apporach" />
+          <button onclick="viewImage('assets/Cert2.jpg')">View</button>
+          <img src="assets/Pattern2.jpg" alt="Delta 1688(PQFN 8x8)DC Test Solution Development Using DMAIC Apporach" />
+          <button onclick="viewImage('assets/Pattern2.jpg')">View</button>
+          </div>
+        
+          <div class="plaque-container">
+          <h3>AFT20S015N EOS Elimination Utilizing Poka-Yoke Methodolgy</h3>
+          <div class="certification-date">Awarded By MD On Q3,2015</div>
+          <div class="medal-container">
+          <img src="assets/bronze-medal.png" alt="Bronze Medal" class="medal-icon" />
+          <span class="medal-label bronze-label">Bronze</span>
+           </div>
+          <img src="assets/Cert3.jpg" alt="AFT20S015N EOS Elimination Utilizing Poka-Yoke Methodolgy" />
+          <button onclick="viewImage('assets/Cert3.jpg')">View</button>
+          <img src="assets/Pattern3.jpg" alt="AFT20S015N EOS Elimination Utilizing Poka-Yoke Methodolgy" />
+          <button onclick="viewImage('assets/Pattern3.jpg')">View</button>
+          </div>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        </div>
+      <div class="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> faisalking3rd@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisal-ahamed-876aa417/">linkedin.com/in/faisal-ahamed</a></p>
+      <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
+    </div>
   </div>
-
-  <!-- Modal for fullscreen image -->
-  <div id="fullscreenModal">
-    <span onclick="closeImage()">&times;</span>
-    <img id="modalImage" src="" alt="Full View" />
-  </div>
-
-  <script>
-    function viewImage(src) {
-      document.getElementById('modalImage').src = src;
-      document.getElementById('fullscreenModal').style.display = "block";
-    }
-
-    function closeImage() {
-      document.getElementById('fullscreenModal').style.display = "none";
-    }
-  </script>
 </body>
 </html>
+<!-- Image Modal Viewer Script -->
+<script>
+  function viewImage(src) {
+    const modal = document.createElement("div");
+    modal.style.position = "fixed";
+    modal.style.top = "0";
+    modal.style.left = "0";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.backgroundColor = "rgba(0,0,0,0.8)";
+    modal.style.display = "flex";
+    modal.style.alignItems = "center";
+    modal.style.justifyContent = "center";
+    modal.style.zIndex = "9999";
+
+    const image = document.createElement("img");
+    image.src = src;
+    image.style.maxWidth = "120%";
+    image.style.maxHeight = "120%";
+    image.style.border = "4px solid white";
+    image.style.borderRadius = "10px";
+    image.style.boxShadow = "0 0 15px #000";
+
+    // Close modal on click
+    modal.onclick = () => document.body.removeChild(modal);
+
+    modal.appendChild(image);
+    document.body.appendChild(modal);
+  }
+</script>
