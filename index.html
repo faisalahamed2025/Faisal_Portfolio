@@ -345,66 +345,58 @@ canvas#matrixCanvas {
     <footer>
     <p>&copy; 2025 Faisal Ahamed</p>
   </footer>
+<!-- Matrix Rain Background Script -->
 <script>
-  // MATRIX RAIN
-  const matrixCanvas = document.getElementById('matrixCanvas');
-  const matrixCtx = matrixCanvas.getContext('2d');
-  matrixCanvas.width = window.innerWidth;
-  matrixCanvas.height = window.innerHeight;
+  const canvas = document.getElementById('matrixCanvas');
+  const ctx = canvas.getContext('2d');
 
-  const matrixColumns = matrixCanvas.width / 15;
-  const matrixDrops = Array.from({ length: matrixColumns }).fill(1);
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 
-  function drawMatrix() {
-    matrixCtx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-    matrixCtx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
-    matrixCtx.fillStyle = '#0F0';
-    matrixCtx.font = '15px monospace';
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  const fontSize = 16;
+  let columns = Math.floor(canvas.width / fontSize);
+  const drops = Array.from({ length: columns }).fill(1);
 
-    for (let i = 0; i < matrixDrops.length; i++) {
-      const text = String.fromCharCode(0x30A0 + Math.random() * 96);
-      matrixCtx.fillText(text, i * 15, matrixDrops[i] * 15);
+  function draw() {
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      if (matrixDrops[i] * 15 > matrixCanvas.height && Math.random() > 0.975) {
-        matrixDrops[i] = 0;
+    ctx.fillStyle = '#0F0';
+    ctx.font = `${fontSize}px monospace`;
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = letters.charAt(Math.floor(Math.random() * letters.length));
+      ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
       }
-      matrixDrops[i]++;
+
+      drops[i]++;
     }
   }
 
-  setInterval(drawMatrix, 33);
+  setInterval(draw, 33);
 
+  // Responsive canvas resizing
   window.addEventListener('resize', () => {
-    matrixCanvas.width = window.innerWidth;
-    matrixCanvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    columns = Math.floor(canvas.width / fontSize);
+    drops.length = 0;
+    for (let i = 0; i < columns; i++) drops[i] = 1;
   });
 </script>
 
-
+<!-- View Button Script -->
 <script>
-  // IMAGE MODAL VIEWER
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImg");
-  const viewButtons = document.querySelectorAll(".view-btn");
-  const closeModal = document.querySelector(".close");
-
-  viewButtons.forEach(btn => {
-    btn.addEventListener("click", function () {
-      const imgSrc = this.getAttribute("data-img");
-      modal.style.display = "block";
-      modalImg.src = imgSrc;
+  document.querySelectorAll('.view-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      alert('View button clicked!');
+      // Replace with your modal or certificate logic
     });
   });
-
-  closeModal.onclick = function () {
-    modal.style.display = "none";
-  };
-
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
 </script>
 </body>
 </html>
