@@ -32,6 +32,24 @@ canvas#matrixCanvas {
   height: 48px;
   margin-bottom: 8px;
 }
+.medal-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.medal-wrapper img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+.medal-overlay {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 32px; /* adjust size */
+  height: 32px;
+  z-index: 2;
+}
 
 
 }
@@ -280,6 +298,18 @@ h1, h2, h3 {
 
         <div class="cert-grid">
         
+       <div class="plaque-container">
+       <h3>NTI Pristine RF Triseca DC Test Solution</h3>
+       <div class="certification-date">Awarded By MD On Q1,2023</div>
+       <div class="medal-wrapper">
+       <img src="assets/Cert1.jpg" alt="NTI Pristine RF Triseca DC Test Solutiion" />
+       <img src="assets/bronze-medal-small.png" alt="Bronze Medal" class="medal-overlay" />
+       </div>
+       <button onclick="viewImage('assets/Cert1.jpg')">View</button>
+       <img src="assets/Pattern1.jpg" alt="NTI Pristine RF Triseca DC Test Solutiion" />
+       <button onclick="viewImage('assets/Pattern1.jpg')">View</button>
+       </div>
+
           <div class="plaque-container">
           <h3>NTI Pristine RF Triseca DC Test Solution</h3>
           <div class="certification-date">Awarded By MD On Q1,2023</div>
