@@ -346,7 +346,13 @@ canvas#matrixCanvas {
     <p>&copy; 2025 Faisal Ahamed</p>
   </footer>
   <button class="view-button">View</button>
-<!-- Matrix Rain Background Script -->
+  <div id="certificateModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center;">
+  <img id="modalImage" src="" style="max-width:80%; max-height:80%;">
+</div>
+und Script -->
+  
+<!-- Matrix Rain Backgro<!-- Certificate Modal Container -->
+
 <script>
   const canvas = document.getElementById('matrixCanvas');
   const ctx = canvas.getContext('2d');
@@ -391,12 +397,21 @@ canvas#matrixCanvas {
 </script>
 
 <!-- View Button Script -->
+<!-- Certificate Modal Script -->
 <script>
+  const modal = document.getElementById('certificateModal');
+  const modalImage = document.getElementById('modalImage');
+
   document.querySelectorAll('.view-button').forEach(btn => {
     btn.addEventListener('click', () => {
-      alert('View button clicked!');
-      // Replace with your modal or certificate logic
+      const imgSrc = btn.getAttribute('data-img');
+      modalImage.src = imgSrc;
+      modal.style.display = 'flex';
     });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.style.display = 'none';
   });
 </script>
 </body>
