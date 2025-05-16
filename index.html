@@ -346,43 +346,40 @@ canvas#matrixCanvas {
     <p>&copy; 2025 Faisal Ahamed</p>
   </footer>
 <script>
-    // Matrix Rain Background
-    const canvas = document.getElementById('matrixCanvas');
-    const ctx = canvas.getContext('2d');
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
+  // MATRIX RAIN
+  const matrixCanvas = document.getElementById('matrixCanvas');
+  const matrixCtx = matrixCanvas.getContext('2d');
+  matrixCanvas.width = window.innerWidth;
+  matrixCanvas.height = window.innerHeight;
 
-    let columns = canvas.width / 15;
-    let drops = [];
-    for (let x = 0; x < columns; x++) drops[x] = 1;
+  const matrixColumns = matrixCanvas.width / 15;
+  const matrixDrops = Array.from({ length: matrixColumns }).fill(1);
 
-    function draw() {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+  function drawMatrix() {
+    matrixCtx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    matrixCtx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
+    matrixCtx.fillStyle = '#0F0';
+    matrixCtx.font = '15px monospace';
 
-      ctx.fillStyle = '#0F0';
-      ctx.font = '15px monospace';
+    for (let i = 0; i < matrixDrops.length; i++) {
+      const text = String.fromCharCode(0x30A0 + Math.random() * 96);
+      matrixCtx.fillText(text, i * 15, matrixDrops[i] * 15);
 
-      for (let i = 0; i < drops.length; i++) {
-        let text = String.fromCharCode(0x30A0 + Math.random() * 96);
-        ctx.fillText(text, i * 15, drops[i] * 15);
-
-        if (drops[i] * 15 > canvas.height && Math.random() > 0.975) drops[i] = 0;
-        drops[i]++;
+      if (matrixDrops[i] * 15 > matrixCanvas.height && Math.random() > 0.975) {
+        matrixDrops[i] = 0;
       }
+      matrixDrops[i]++;
     }
+  }
 
-    setInterval(draw, 33);
+  setInterval(drawMatrix, 33);
 
-    // Responsive canvas
-    window.addEventListener('resize', () => {
-      canvas.height = window.innerHeight;
-      canvas.width = window.innerWidth;
-      columns = canvas.width / 15;
-      drops = [];
-      for (let x = 0; x < columns; x++) drops[x] = 1;
-    });
+  window.addEventListener('resize', () => {
+    matrixCanvas.width = window.innerWidth;
+    matrixCanvas.height = window.innerHeight;
+  });
 </script>
+
 
 <script>
   // IMAGE MODAL VIEWER
