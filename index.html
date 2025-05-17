@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Faisal Ahamed Portfolio</title>
   <style>
+    <style>
+  body {
+    background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    background-color: #fefae0; /* light parchment */
+    font-family: 'Merriweather', serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book-page {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fffdf5;
+    border: 1px solid #e0dccc;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h2, h3 {
+    font-family: 'EB Garamond', serif;
+    margin-top: 0;
+  }
+
+  /* Optional: Add book spine visual */
+  .book-spine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #d6cdbf;
+    transform: translateX(-50%);
+  }
+</style>
+
     body {
       background-color: #D2B48C;
       background-image: url('assets/4127298.jpg');
@@ -238,7 +277,8 @@ h1, h2, h3 {
 </div>
 
     <div class="about">
-      <section id="about">...</section>
+     <div class="book-page"> 
+     <section id="about">...</section>
       <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
       <p align="center">
         <a href="assets/Faisal_04_07_2024_Resume.pdf" download>
@@ -251,9 +291,11 @@ h1, h2, h3 {
       <hr />
       <h2>About Me</h2>
       <p>Experienced engineer with 15+ years in <strong>Test Development</strong> and <strong>Product Engineering</strong> in the semiconductor industry. Proven track record in <strong>RF characterization</strong>, <strong>load board design</strong>, and <strong>new product introduction (NPI)</strong>. Certified Six Sigma Green & Black Belt.</p>
-    </div>
+   </div>
+   </div>
 
     <div class="work">
+      <div class="book-page">
     <section id="work">...</section>
     <h2>Work Experience</h2>
      <ul>
@@ -291,8 +333,10 @@ h1, h2, h3 {
         <li>Revamped MHPA18010... $250 million revenue, DMADV certification.</li>
       </ul>
     </div>
-
+    </div>
+    
     <div class="certifications">
+    <div class="book-page">
     <section id="certifications">...</section> 
     <h2>Executive-Level Awards (CEO & Global Recognitions)</h2>
     <ul>
@@ -359,6 +403,7 @@ h1, h2, h3 {
        </div>
     </div>
       <div class="certifications">
+      <div class="book-page">
       <section id="certifications">...</section> 
       <h2>Factory & Department-Level Technical Excellence Awards</h2>
       <ul>
@@ -474,9 +519,11 @@ h1, h2, h3 {
           <button onclick="viewImage('assets/Pattern3.jpg')">View</button>
           </div>
         
+        
         </div>
         </div>
       <div class="contact">
+      <div class="book-page">
       <section id="contact">...</section>
       <h2>Contact</h2>
       <p><strong>Email:</strong> faisalking3rd@gmail.com</p>
