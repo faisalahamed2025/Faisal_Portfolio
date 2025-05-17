@@ -579,7 +579,23 @@ h1, h2, h3 {
     }
   }
 </script>
+<script>
+    const sections = document.querySelectorAll("section");
 
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
 <!-- Image Modal Viewer Script -->
