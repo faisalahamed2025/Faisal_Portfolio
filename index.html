@@ -49,14 +49,30 @@ canvas#matrixCanvas {
   width: 32px; /* adjust size */
   height: 32px;
   z-index: 2;
+}.nav-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
-    <div class="nav-buttons">
-    <button onclick="scrollToSection('About Me')">About Me</button>
-   <button onclick="scrollToSection('Work Experience')"><Work Experience/button>
-   <button onclick="scrollToSection('Executive-Level Awards (CEO & Global Recognitions)')">Executive-Level Awards (CEO & Global Recognitions)</button>
-   <button onclick="scrollToSection('Factory & Department-Level Technical Excellence Awards')"><Factory & Department-Level Technical Excellence Awards/button>
-  <button onclick="scrollToSection('Contact')">Contact</button>
-  </div>
+
+.nav-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
 }
 .medal-container {
   position: relative;
@@ -181,7 +197,15 @@ h1, h2, h3 {
   <div class="content">
     <div style="text-align: center;">
       <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;" />
-    </div>
+    
+    <div class="nav-buttons">
+    <button onclick="scrollToSection('About Me')">About Me</button>
+   <button onclick="scrollToSection('Work Experience')"><Work Experience/button>
+   <button onclick="scrollToSection('Executive-Level Awards (CEO & Global Recognitions)')">Executive-Level Awards (CEO & Global Recognitions)</button>
+   <button onclick="scrollToSection('Factory & Department-Level Technical Excellence Awards')"><Factory & Department-Level Technical Excellence Awards/button>
+  <button onclick="scrollToSection('Contact')">Contact</button>
+  </div>
+    
 
     <div class="about">
       <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
