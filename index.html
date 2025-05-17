@@ -50,8 +50,11 @@ canvas#matrixCanvas {
   height: 32px;
   z-index: 2;
 }
-
-
+    <div class="nav-buttons">
+    <button onclick="scrollToSection('about')">About</button>
+   <button onclick="scrollToSection('work')">Work</button>
+   <button onclick="scrollToSection('certificates')">Certificates</button>
+</div>
 }
 .medal-container {
   position: relative;
@@ -60,6 +63,29 @@ canvas#matrixCanvas {
   height: 68px;
   margin-bottom: 8px;
 }
+    .nav-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.nav-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
 
 .medal-icon {
   width: 50%;
@@ -449,6 +475,14 @@ und Script -->
     drops.length = 0;
     for (let i = 0; i < columns; i++) drops[i] = 1;
   });
+</script>
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 </body>
 </html>
