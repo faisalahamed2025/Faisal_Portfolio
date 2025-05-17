@@ -198,17 +198,17 @@ h1, h2, h3 {
     <div style="text-align: center;">
       <img src="assets/Selfimage.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;" />
     
-    <div class="nav-buttons">
-    <button onclick="scrollToSection('About Me')">About Me</button>
-   <button onclick="scrollToSection('Work Experience')"><Work Experience/button>
-   <button onclick="scrollToSection('Executive-Level Awards (CEO & Global Recognitions)')">Executive-Level Awards (CEO & Global Recognitions)</button>
-   <button onclick="scrollToSection('Factory & Department-Level Technical Excellence Awards')"><Factory & Department-Level Technical Excellence Awards/button>
-  <button onclick="scrollToSection('Contact')">Contact</button>
-<section id="about">...</section>
-<section id="work">...</section>
-<section id="certificates">...</section>
+<div class="nav-buttons">
+<button onclick="scrollToSection('about')">About Me</button>
+<button onclick="scrollToSection('work')">Work Experience</button>
+<button onclick="scrollToSection('certifications')">Executive-Level Awards</button>
+<button onclick="scrollToSection('contact')">Contact</button>
+<section id="about" class="about"> ... </section>
+<section id="work" class="work"> ... </section>
+<section id="certifications" class="certifications"> ... </section>
+<section id="contact" class="contact"> ... </section>
 
-  </div>
+</div>
   </div>
 
     <div class="about">
@@ -514,6 +514,15 @@ und Script -->
     }
   }
 </script>
+     <script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script>
+
 </body>
 </html>
 <!-- Image Modal Viewer Script -->
