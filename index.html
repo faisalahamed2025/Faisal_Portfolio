@@ -233,7 +233,7 @@ h1, h2, h3 {
 <section id="certifications" class="certifications"> ... </section>
 <section id="contact" class="contact"> ... </section>
 </div>
-
+</div>
     <div class="about">
       <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
       <p align="center">
@@ -550,6 +550,14 @@ und Script -->
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+</script>
+<script>
+  function scrollToSection(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 </script>
