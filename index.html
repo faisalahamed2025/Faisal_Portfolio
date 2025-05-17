@@ -162,7 +162,7 @@ h1, h2, h3 {
       margin: 0 10px;
     }
     /* Overlay background for better text readability */
-    .about, .work, .contact, .certifications {
+    .about, .work, .contact, .certifications .awards{
       background-color: rgba(255, 255, 255, 0.85);
       padding: 20px;
       border-radius: 8px;
@@ -170,6 +170,11 @@ h1, h2, h3 {
       margin-bottom: 40px;
     }
     .certifications ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+    }
+    .awards ul {
       padding-left: 20px;
       margin-bottom: 30px;
     }
@@ -237,7 +242,7 @@ h1, h2, h3 {
 <button onclick="scrollToSection('about')">About Me</button>
 <button onclick="scrollToSection('work')">Work Experience</button>
 <button onclick="scrollToSection('certifications')">External CEO Award</button>
-<button onclick="scrollToSection('certifications')">Internal Factory Awards</button>
+<button onclick="scrollToSection('awards')">Internal Factory Awards</button>
 <button onclick="scrollToSection('contact')">Contact</button>
 </div>
 </div>
@@ -298,11 +303,10 @@ h1, h2, h3 {
     </div>
 
     <div class="certifications">
-    <section id="Internal Factory Awards">...</section>
-   ! <section id="certifications">...</section>  
-    <h2>External CEO Award</h2>
+    <section id="certifications">...</section>
+     <h2>External CEO Award</h2>
     <p>This award was presented by the company’s CEO for outstanding external performance.</p>
-  </section>
+    </section>
    
     <ul>
         <li>Six Sigma BlackBelt Certification.</li>
@@ -367,10 +371,8 @@ h1, h2, h3 {
         </div>
        </div>
     </div>
-      <div class="certifications">
-   <section id="certificates-section" class="certificates section">
-     <a href="#certificates-section" class="hover-button">Certificates</a>
-    ! <section id="certifications">...</section>
+      <div class="awards">
+     <section id="awards">...</section> 
     <h2>Internal Factory Awards</h2>
     <p>This section includes factory-level TEA certificates and Plague awards.</p>
   </section>
