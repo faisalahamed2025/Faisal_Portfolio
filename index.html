@@ -70,8 +70,32 @@ canvas#matrixCanvas {
 .nav-buttons button:hover {
   background-color: #0056b3;
   transform: scale(1.1);
+}html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
 }
 
+canvas#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.nav-buttons {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 }
 .medal-container {
@@ -203,13 +227,12 @@ h1, h2, h3 {
 <button onclick="scrollToSection('work')">Work Experience</button>
 <button onclick="scrollToSection('certifications')">Executive-Level Awards</button>
 <button onclick="scrollToSection('contact')">Contact</button>
+</div>
 <section id="about" class="about"> ... </section>
 <section id="work" class="work"> ... </section>
 <section id="certifications" class="certifications"> ... </section>
 <section id="contact" class="contact"> ... </section>
-
 </div>
-  </div>
 
     <div class="about">
       <h1>Faisal Ahamed – Senior Principal Test Development Engineer</h1>
@@ -519,6 +542,14 @@ und Script -->
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script>
+<script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
   }
 </script>
