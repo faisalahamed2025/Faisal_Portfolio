@@ -615,6 +615,25 @@ h1, h2, h3 {
       observer.observe(section);
     });
   </script>
+  <script>
+  const patternCanvas = document.createElement('canvas');
+patternCanvas.width = 20;
+patternCanvas.height = 20;
+const pctx = patternCanvas.getContext('2d');
+
+// Draw small dots or lines in light color
+pctx.fillStyle = '#cccccc';
+pctx.beginPath();
+pctx.arc(5, 5, 1, 0, 2 * Math.PI);
+pctx.fill();
+
+// Create pattern
+const pattern = ctx.createPattern(patternCanvas, 'repeat');
+
+// Apply pattern as background fill
+ctx.fillStyle = pattern;
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+  </script>
 </body>
 </html>
 <!-- Image Modal Viewer Script -->
