@@ -20,6 +20,33 @@ canvas#matrixCanvas {
       z-index: -1;
 
   }
+    .vertical-button-group {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.vertical-button-group button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.vertical-button-group button:hover {
+  background-color: #004c99;
+  transform: translateX(-4px);
+}
+
     canvas {
   background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
 }
@@ -250,7 +277,12 @@ h1, h2, h3 {
   </style>
 </head>
 <body>
- 
+  <div class="vertical-button-group">
+  <button onclick="scrollToSection('about')">About</button>
+  <button onclick="scrollToSection('work')">Work</button>
+  <button onclick="scrollToSection('awards')">Awards</button>
+  <button onclick="scrollToSection('certificate')">Certificate</button>
+</div>
    <canvas id="matrixCanvas"></canvas>
   <div class="content">
     <div style="text-align: center;">
@@ -679,6 +711,13 @@ const pattern = ctx.createPattern(patternCanvas, 'repeat');
 ctx.fillStyle = pattern;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
   </script>
+  function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 </body>
 </html>
 <!-- Image Modal Viewer Script -->
