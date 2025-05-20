@@ -68,6 +68,33 @@ nav {
 .container {
   margin-top: 60px; /* adjust based on nav height */
 }
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  z-index: 1000;
+  border-bottom: 2px solid #e44a19;
+}
+
+nav button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  margin: 0 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+nav button:hover {
+  background-color: #004c99;
+}
 
 
 }
@@ -244,6 +271,34 @@ h1, h2, h3 {
 .plaque-container img:hover {
   transform: scale(1.05);
 }
+.fixed-top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #121212;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  border-bottom: 2px solid #e44a19;
+  display: flex;
+  gap: 8px;
+}
+
+.fixed-top-nav button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fixed-top-nav button:hover {
+  background-color: #004c99;
+}
+
 
     /* Responsive images */
     @media (max-width: 440px) {
