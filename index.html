@@ -832,22 +832,7 @@ h1, h2, h3 {
     for (let i = 0; i < columns; i++) drops[i] = 1;
   });
 </script>
-  <script>
-  function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
 
-  <script>
-  function scrollToSection(id) {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-</script>
 
 <script>
     const sections = document.querySelectorAll("section");
@@ -897,9 +882,6 @@ function scrollToSection(id) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 }
-
-</body>
-</html>
 <!-- Image Modal Viewer Script -->
 <script>
   function viewImage(src) {
@@ -930,3 +912,13 @@ function scrollToSection(id) {
     document.body.appendChild(modal);
   }
 </script>
+<script>
+  function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+</script>
+</body>
+</html>
