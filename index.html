@@ -20,17 +20,17 @@ canvas#matrixCanvas {
       z-index: -1;
 
   }
-    .vertical-button-group {
+    <!.vertical-button-group {
   position: fixed;
   top: 20px;
   right: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 1000;
+  z-index: 1000;-->
 }
 
-.vertical-button-group button {
+<!.vertical-button-group button {
   background-color: #0066cc;
   color: #fff;
   border: none;
@@ -39,12 +39,12 @@ canvas#matrixCanvas {
   font-size: 14px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease;-->
 }
 
-.vertical-button-group button:hover {
+<!.vertical-button-group button:hover {
   background-color: #004c99;
-  transform: translateX(-4px);
+  transform: translateX(-4px);-->
 }
 
     canvas {
@@ -123,6 +123,39 @@ footer {
   width: 75%;
   height: auto;
   display: block;
+}
+.fixed-top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #004080; /* Dark blue or your brand color */
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  z-index: 1000;  /* stay on top */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fixed-top-nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.fixed-top-nav button:hover {
+  background-color: #0073e6;
+  border-radius: 4px;
+}
+
+/* Add some padding top to your page content so nav doesn't cover it */
+body {
+  padding-top: 50px;  /* Adjust based on nav height */
 }
 
 
@@ -254,7 +287,7 @@ h1, h2, h3 {
   </style>
 </head>
 <body>
-  <div class="vertical-button-group">
+  <div class=""fixed-top-nav"">
   <button onclick="scrollToSection('about')">About</button>
   <button onclick="scrollToSection('work')">Work Experince</button>
   <button onclick="scrollToSection('ceo')">CEO Awards </button>
