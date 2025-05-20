@@ -77,6 +77,22 @@ canvas#matrixCanvas {
   height: 32px;
   z-index: 2;
 }
+nav {
+  position: relative; /* normal flow, scrolls with page */
+  top: 0;
+  display: flex;
+  justify-content: flex-end; /* buttons aligned to right */
+  gap: 15px;
+  padding: 10px 20px;
+  background-color: #121212; /* or transparent if you want */
+  border-bottom: 2px solid #e44a19;
+  z-index: 1;
+}
+
+/* Make sure content is below nav */
+.container {
+  margin-top: 60px; /* adjust based on nav height */
+}
 
 
 }
