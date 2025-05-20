@@ -20,6 +20,34 @@ canvas#matrixCanvas {
       z-index: -1;
 
   }
+.fixed-top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  z-index: 999;
+  border-bottom: 2px solid #e44a19;
+}
+
+.fixed-top-nav button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.fixed-top-nav button:hover {
+  background-color: #004c99;
+}
 
 }
  canvas {
