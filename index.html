@@ -803,6 +803,9 @@ h1, h2, h3 {
   const drops = Array.from({ length: columns }).fill(1);
 
   function draw() {
+    <!ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';-->
+    <!ctx.fillRect(0, 0, canvas.width, canvas.height);-->
+  
     ctx.fillStyle = "rgba(0, 0, 139, 0.05)";  // dark blue with low opacity
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -832,7 +835,22 @@ h1, h2, h3 {
     for (let i = 0; i < columns; i++) drops[i] = 1;
   });
 </script>
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
+  <script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
 
 <script>
     const sections = document.querySelectorAll("section");
@@ -882,6 +900,9 @@ function scrollToSection(id) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 }
+
+</body>
+</html>
 <!-- Image Modal Viewer Script -->
 <script>
   function viewImage(src) {
@@ -912,12 +933,3 @@ function scrollToSection(id) {
     document.body.appendChild(modal);
   }
 </script>
-
-  function scrollToSection(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-}
-</body>
-</html>
