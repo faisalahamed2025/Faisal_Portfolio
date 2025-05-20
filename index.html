@@ -4,48 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Faisal Ahamed Portfolio</title>
-  <style>
-    body {
-      background-color: #D2B48C;
-      background-image: url('assets/4127298.jpg');
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
+body {
+  background-color: #D2B48C;
+  background-image: url('assets/4127298.jpg');
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
+
 canvas#matrixCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-
-  }
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-
+.vertical-button-group {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
 }
 
-
+.vertical-button-group button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-    canvas {
+.vertical-button-group button:hover {
+  background-color: #004c99;
+  transform: translateX(-4px);
+}
+
+canvas {
   background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
 }
 
-    .content {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
- 
+.content {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
+
 .medal-wrapper {
   position: relative;
   display: inline-block;
 }
-   
-}
+
 .medal-wrapper img:first-child {
   width: 100%;
   height: auto;
@@ -55,21 +71,26 @@ canvas#matrixCanvas {
   position: absolute;
   bottom: 4px;
   right: 4px;
-  width: 32px; /* adjust size */
+  width: 32px;
   height: 32px;
   z-index: 2;
 }
+
 nav {
-  position: relative; /* normal flow, scrolls with page */
-  top: 0;
+  position: relative; /* <-- changed from fixed */
   display: flex;
-  justify-content: center; /* buttons aligned to right */
+  justify-content: center;
   gap: 15px;
   padding: 10px 20px;
-  background-color: #121212; /* or transparent if you want */
+  background-color: #121212;
   border-bottom: 2px solid #e44a19;
   z-index: 1;
 }
+
+.container {
+  margin-top: 60px;
+}
+
 
 /* Make sure content is below nav */
 .container {
