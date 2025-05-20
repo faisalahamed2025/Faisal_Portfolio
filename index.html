@@ -846,6 +846,12 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
     el.scrollIntoView({ behavior: 'smooth' });
   }
 }
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 </body>
 </html>
