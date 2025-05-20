@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,7 +124,8 @@ nav button {
   white-space: nowrap;
 }
 
-
+nav button:hover {
+  background-color: #004c99;
 }
 
 
@@ -163,6 +165,10 @@ footer {
 
 
 }
+
+
+
+
 .medal-icon {
   width: 75%;
   height: auto;
@@ -803,10 +809,7 @@ h1, h2, h3 {
   const drops = Array.from({ length: columns }).fill(1);
 
   function draw() {
-    <!ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';-->
-    <!ctx.fillRect(0, 0, canvas.width, canvas.height);-->
-  
-    ctx.fillStyle = "rgba(0, 0, 139, 0.05)";  // dark blue with low opacity
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = '#0F0';
@@ -842,7 +845,15 @@ h1, h2, h3 {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
+</script>
+     <script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script>
   <script>
   function scrollToSection(id) {
     const el = document.getElementById(id);
@@ -851,6 +862,13 @@ h1, h2, h3 {
     }
   }
 </script>
+<script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
 <script>
     const sections = document.querySelectorAll("section");
