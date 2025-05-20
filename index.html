@@ -822,6 +822,14 @@ h1, h2, h3 {
     }
   }
 </script>
+  <script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
 <script>
   function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
