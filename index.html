@@ -924,18 +924,14 @@ const pattern = ctx.createPattern(patternCanvas, 'repeat');
 ctx.fillStyle = pattern;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
   </script>
+  <script>
   function scrollToSection(id) {
   const el = document.getElementById(id);
   if (el) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 }
-function scrollToSection(id) {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
-  }
-}
+  </script>     
 
 </body>
 </html>
@@ -969,7 +965,8 @@ function scrollToSection(id) {
     document.body.appendChild(modal);
   }
 </script>
-  <footer>
+  
+<footer>
     <p>© 2025 Faisal Ahamed. All rights reserved.</p>
   </footer>
   
