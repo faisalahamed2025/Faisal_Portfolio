@@ -889,14 +889,6 @@ h1, h2, h3 {
   }
 </script>
 <script>
-  function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
-<script>
     const sections = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(entries => {
